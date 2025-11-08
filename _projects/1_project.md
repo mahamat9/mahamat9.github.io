@@ -9,9 +9,9 @@ category: academic
 github: https://github.com/mahamat9/diffusion_model_M2DSUA
 ---
 
-## Overview
+<!--## Overview
 
-This Master's thesis explores the mathematical foundations and practical applications of diffusion models for synthetic data generation.
+This Master's thesis explores the mathematical foundations and practical applications of diffusion models for synthetic data generation.-->
 
 ### Key Contributions
 
