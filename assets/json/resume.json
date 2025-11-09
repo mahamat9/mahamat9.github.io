@@ -75,7 +75,7 @@
       "location": "Angers, France",
       "url": "https://formations.univ-angers.fr/fr/offre-de-formation/master-lmd-MLMD/sciences-technologies-sante-STS/master-mathematiques-et-applications-KV26XNFS/parcours-data-science-L09QAC4H.html",
       "area": "Data Science",
-      "studyType": "Master",
+      "studyType": "Master of Science",
       "startDate": "2023-09-01",
       "endDate": "2025-06-30",
       "score": "",
@@ -91,7 +91,7 @@
       "location": "Angers, France",
       "url": "",
       "area": "Mathematics",
-      "studyType": "Bachelor",
+      "studyType": "Bachelor of Science",
       "startDate": "2020-09-01",
       "endDate": "2023-06-30",
       "score": "",
@@ -114,8 +114,8 @@
       "url": "",
       "area": "Mathematics & Biology",
       "studyType": "Baccalauréat, Series D",
-      "startDate": "2018-09-01",
-      "endDate": "2018-06-30",
+      "startDate": "2018-10-01",
+      "endDate": "2018-08-31",
       "score": "National Rank: 22nd/79,136",
       "courses": []
     }

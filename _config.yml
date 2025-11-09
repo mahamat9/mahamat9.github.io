@@ -173,10 +173,11 @@ kramdown:
 # Includes & excludes
 include: ["_pages", "_scripts"]
 exclude:
-  - _pages/profiles.md # exclude people page from build
+  - _pages/collaborators.md # exclude people page from build
   - _pages/teaching.md # exclude teaching page from build
   - _pages/publications.md # exclude publications page from build
   - _pages/books.md # exclude books page from build
+  - _pages/blog.md # exclude blog page from build
 
   - bin/
   - CONTRIBUTING.md
@@ -192,7 +193,6 @@ exclude:
   - lighthouse_results/
   - package.json
   - package-lock.json
-  - _pages/about_einstein.md
   - purgecss.config.js
   - README.md
   - readme_preview/

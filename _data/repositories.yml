@@ -6,10 +6,10 @@ repo_description_lines_max: 2
 github_repos:
   - mahamat9/diffusion_model_M2DSUA
   - mahamat9/deep-processing-images
-  - mahamat9/denoising-of-ECG-signals
+  #- mahamat9/denoising-of-ECG-signals
   - mahamat9/Base-de-donnees-et-Application-web-sur-donnees-Enron
   - mahamat9/Application-Bibli
-  - mahamat9/M2S3
+  #- mahamat9/M2S3
 
-  - mahamat9/ianspam_file
+  #- mahamat9/ianspam_file
   - mahamat9/internship_methods
