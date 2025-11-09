@@ -393,16 +393,16 @@ ninja.data = [{
             window.location.href = "/blog/2015/formatting-and-links/";
           
         },
-      },{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
-          description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
+      },{id: "news-a-long-announcement-with-details",
           title: 'A long announcement with details',
           description: "",
           section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+              window.location.href = "/news/announcemen_long/";
+            },},{id: "news-i-m-excited-to-announce-that-i-successfully-defended-my-master-s-thesis-on-diffusion-generative-models-for-my-msc-in-data-science-thesis-highlights-the-thesis-explored-the-mathematical-foundations-and-practical-applications-of-diffusion-models-for-synthetic-data-generation-with-key-contributions-including-in-depth-study-of-stochastic-differential-equations-sde-and-time-reversal-processes-development-and-implementation-of-ddpm-denoising-diffusion-probabilistic-models-using-pytorch-comprehensive-benchmarking-against-gans-and-vaes-on-mnist-dataset-using-mean-max-logit-mml-score-critical-analysis-of-strengths-and-limitations-for-synthetic-data-generation-applications-this-work-was-completed-as-part-of-my-master-s-program-at-université-d-angers-combining-rigorous-mathematical-theory-with-practical-deep-learning-implementations-full-report-available-on-github-project-details",
+          title: 'I’m excited to announce that I successfully defended my Master’s thesis on Diffusion...',
+          description: "",
+          section: "News",},{id: "news-graduated-with-msc-in-data-science-completed-my-internship-at-imt-atlantique-upcoming-valorization",
+          title: '🎓 Graduated with MSc in Data Science! Completed my internship at IMT Atlantique...',
           description: "",
           section: "News",},{id: "projects-diffusion-generative-models",
           title: 'Diffusion Generative Models',
