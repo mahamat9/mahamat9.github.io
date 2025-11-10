@@ -27,6 +27,7 @@ This Master's thesis explores the mathematical foundations and practical applica
 - Generative Models (GAN, VAE, Diffusion)
 
 [Read the full report](https://github.com/mahamat9/diffusion_model_M2DSUA/blob/main/rapport/TER_Diffusion_Model.pdf)
+
 <!--
 Every project has a beautiful feature showcase page.
 It's easy to include images in a flexible 3-column grid format.

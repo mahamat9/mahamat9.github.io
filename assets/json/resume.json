@@ -125,67 +125,37 @@
       "name": "Programming",
       "level": "Advanced",
       "icon": "fa-solid fa-code",
-      "keywords": [
-        "Python",
-        "C++ (intro level)",
-        "R",
-        "SQL"
-      ]
+      "keywords": ["Python", "C++ (intro level)", "R", "SQL"]
     },
     {
       "name": "Programming Paradigms",
       "level": "Advanced",
       "icon": "fa-solid fa-cogs",
-      "keywords": [
-        "Asynchronous programming",
-        "Parallel and concurrent programming"
-      ]
+      "keywords": ["Asynchronous programming", "Parallel and concurrent programming"]
     },
     {
       "name": "Natural Language Processing",
       "level": "Intermediate",
       "icon": "fa-solid fa-language",
-      "keywords": [
-        "Tokenization",
-        "Embeddings",
-        "Text classification",
-        "Text generation",
-        "Model fine-tuning"
-      ]
+      "keywords": ["Tokenization", "Embeddings", "Text classification", "Text generation", "Model fine-tuning"]
     },
     {
       "name": "Machine Learning Paradigms",
       "level": "Advanced",
       "icon": "fa-solid fa-brain",
-      "keywords": [
-        "Supervised learning",
-        "Unsupervised learning",
-        "Semi-supervised learning",
-        "Reinforcement learning",
-        "Transfer learning"
-      ]
+      "keywords": ["Supervised learning", "Unsupervised learning", "Semi-supervised learning", "Reinforcement learning", "Transfer learning"]
     },
     {
       "name": "Data Engineering",
       "level": "Intermediate",
       "icon": "fa-solid fa-database",
-      "keywords": [
-        "Web scraping",
-        "Django/Flask",
-        "NoSQL (MongoDB)"
-      ]
+      "keywords": ["Web scraping", "Django/Flask", "NoSQL (MongoDB)"]
     },
     {
       "name": "Tools",
       "level": "Advanced",
       "icon": "fa-solid fa-tools",
-      "keywords": [
-        "PowerBI",
-        "LaTeX",
-        "Git",
-        "Unix",
-        "Docker"
-      ]
+      "keywords": ["PowerBI", "LaTeX", "Git", "Unix", "Docker"]
     }
   ],
   "languages": [
@@ -209,11 +179,7 @@
     {
       "name": "Hobbies",
       "icon": "fa-solid fa-heart",
-      "keywords": [
-        "Historical documentaries",
-        "Board games",
-        "Running"
-      ]
+      "keywords": ["Historical documentaries", "Board games", "Running"]
     }
   ],
   "references": [
