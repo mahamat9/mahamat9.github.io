@@ -13,7 +13,6 @@ profile:
     <p>Brest, France</p>
     <p>Open to opportunities R&D / PhD, without location constraints</p>
 #<p><a href="/files/CV.pdf">CV (PDF)</a></p>
-
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
