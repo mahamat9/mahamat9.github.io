@@ -9,14 +9,7 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-projects",
-          title: "Projects",
-          description: "A collection of my main academic and personal projects.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/projects/";
-          },
-        },{id: "nav-repositories",
+  },{id: "nav-repositories",
           title: "Repositories",
           description: "A showcase of my open-source projects and research code.",
           section: "Navigation",
@@ -398,10 +391,12 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcemen_long/";
-            },},{id: "news-i-m-excited-to-announce-that-i-successfully-defended-my-master-s-thesis-on-diffusion-generative-models-for-my-msc-in-data-science-thesis-highlights-the-thesis-explored-the-mathematical-foundations-and-practical-applications-of-diffusion-models-for-synthetic-data-generation-with-key-contributions-including-in-depth-study-of-stochastic-differential-equations-sde-and-time-reversal-processes-development-and-implementation-of-ddpm-denoising-diffusion-probabilistic-models-using-pytorch-comprehensive-benchmarking-against-gans-and-vaes-on-mnist-dataset-using-mean-max-logit-mml-score-critical-analysis-of-strengths-and-limitations-for-synthetic-data-generation-applications-this-work-was-completed-as-part-of-my-master-s-program-at-université-d-angers-combining-rigorous-mathematical-theory-with-practical-deep-learning-implementations-full-report-available-on-github-project-details",
-          title: 'I’m excited to announce that I successfully defended my Master’s thesis on Diffusion...',
+            },},{id: "news-successfully-defended-master-39-s-thesis-on-diffusion-models",
+          title: 'Successfully Defended Master&amp;#39;s Thesis on Diffusion Models',
           description: "",
-          section: "News",},{id: "news-graduated-with-msc-in-data-science-completed-my-internship-at-imt-atlantique-upcoming-valorization",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_2/";
+            },},{id: "news-graduated-with-msc-in-data-science-completed-my-internship-at-imt-atlantique-upcoming-valorization",
           title: '🎓 Graduated with MSc in Data Science! Completed my internship at IMT Atlantique...',
           description: "",
           section: "News",},{id: "projects-diffusion-generative-models",
