@@ -386,12 +386,7 @@ ninja.data = [{
             window.location.href = "/blog/2015/formatting-and-links/";
           
         },
-      },{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcemen_long/";
-            },},{id: "news-successfully-defended-master-39-s-thesis-on-diffusion-models",
+      },{id: "news-successfully-defended-master-39-s-thesis-on-diffusion-models",
           title: 'Successfully Defended Master&amp;#39;s Thesis on Diffusion Models',
           description: "",
           section: "News",handler: () => {
