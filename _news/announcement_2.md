@@ -2,7 +2,7 @@
 layout: post
 title: Successfully Defended Master's Thesis on Diffusion Models
 date: 2025-03-14 13:00:00-0000
-inline: false #click on bottom to show more details
+inline: false # click on bottom to show more details
 related_posts: false
 ---
 
