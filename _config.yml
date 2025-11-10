@@ -47,7 +47,7 @@ repo_trophies:
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: true
+footer_fixed: false
 search_enabled: true
 socials_in_search: true
 posts_in_search: true
@@ -66,6 +66,61 @@ max_width: 930px
 serve_og_meta: false # Include Open Graph meta tags in the HTML head
 serve_schema_org: false # Include Schema.org in the HTML head
 og_image: # The site-wide (default for all links) Open Graph preview image
+
+
+# -----------------------------------------------------------------------------
+# Social integration
+# -----------------------------------------------------------------------------
+
+twitter_username: # your Twitter handle
+email: mmahamatnour99@gmail.com # your email address
+linkedin_username: mmahamat # your LinkedIn user name
+website: https://mahamat9.github.io # your personal website URL
+bluesky_url: mahamat9.bsky.social # your bluesky URL
+
+github_username: mahamat9 # your GitHub user name
+gitlab_username: # your GitLab user name
+
+work_url: # work page URL
+
+medium_username: # your Medium username
+stackoverflow_id: # your stackoverflow id
+kaggle_id: # your kaggle id
+telegram_username: # your Telegram user name
+
+acm_id: # your dl.acm.org/profile/id
+blogger_url: # your blogger URL
+dblp_url: # your DBLP profile url
+discord_id: # your discord id (18-digit unique numerical identifier)
+facebook_id: # your facebook id
+instagram_id: # your instagram id
+pinterest_id: # your pinterest id
+wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
+whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
+wikidata_id: # your wikidata id
+wikipedia_id: # your wikipedia id (Case sensitive)
+x_username: # your X handle
+youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
+zotero_username: # your zotero username
+flickr_id: # your flickr id
+spotify_id: # your spotify id
+
+scholar_userid:  # your Google Scholar ID
+ieee_id: # your ieeexplore.ieee.org/author/id
+research_gate_profile: # your profile on ResearchGate
+inspirehep_id: # Inspire HEP author ID
+keybase_username: # your keybase user name
+lastfm_id: # your lastfm id
+mastodon_username: # your mastodon instance+username in the format instance.tld/@username
+orcid_id:  # your ORCID ID
+osf_id: # your OSF ID
+publons_id: # your ID on Publons
+quora_username: # your Quora username
+scopus_id: # your profile on Scopus
+semanticscholar_id: # your Semantic Scholar ID
+unsplash_id: # your unsplash id
+
+contact_note: > # You can even add a little note about which of these is the best way to reach you.
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -86,7 +141,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio # blog_name will be displayed in your blog page
+blog_name: Mahamat's blog #al-folio # blog_name will be displayed in your blog page
 blog_description: a simple whitespace theme for academics
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
@@ -173,11 +228,13 @@ kramdown:
 # Includes & excludes
 include: ["_pages", "_scripts"]
 exclude:
+  - _pages/blog.md # exclude blog page from build
+  - _pages/projects.md # exclude projects page from build
+
   - _pages/collaborators.md # exclude people page from build
   - _pages/teaching.md # exclude teaching page from build
   - _pages/publications.md # exclude publications page from build
   - _pages/books.md # exclude books page from build
-  - _pages/blog.md # exclude blog page from build
 
   - bin/
   - CONTRIBUTING.md
@@ -269,8 +326,8 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Mahamat-Nour Bachar] #[Einstein]
+  first_name: [Mahamat] #[Albert, A.]
 
   style: apa
   locale: en

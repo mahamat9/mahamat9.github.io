@@ -28,7 +28,21 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-<!--Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+<!--
+I'm a Data Science graduate (MSc) passionate about developing innovative AI solutions, particularly in healthcare and image processing applications.
+
+My expertise spans **deep learning**, **generative models** (diffusion models, GANs, VAEs), and **medical image analysis**. I recently completed my Master's thesis on the mathematical foundations of diffusion models and an internship at IMT Atlantique focusing on cutting-edge research applications.
+
+I'm actively seeking **R&D positions or PhD opportunities** where I can contribute to advancing artificial intelligence in healthcare and develop impactful solutions through rigorous research and practical implementations.
+
+**Key interests:**
+- Deep learning for medical applications
+- Advanced image processing techniques
+- Generative AI and synthetic data
+- Mathematical foundations of machine learning
+
+
+Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
 Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
 
