@@ -115,7 +115,8 @@ scopus_id: # your profile on Scopus
 semanticscholar_id: # your Semantic Scholar ID
 unsplash_id: # your unsplash id
 
-contact_note: > # You can even add a little note about which of these is the best way to reach you.
+contact_note: > 
+  You can even add a little note about which of these is the best way to reach you.
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
