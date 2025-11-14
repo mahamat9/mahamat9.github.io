@@ -192,10 +192,10 @@
   "projects": [
     {
       "name": "ECG Signal Denoising with Diffusion Models",
-      "summary": "Personal project on denoising ECG signals using diffusion models (DDPM).",
+      "summary": "Personal project on denoising ECG signals.",
       "highlights": [
         "Simulation of various physiological noises (Gaussian, electrode motion, muscle artifacts) on real ECG signals",
-        "Training a diffusion model (DDPM) and evaluation using MSE, SNR and correlation metrics"
+        "Training a autoencoder/diffusion model (DDPM) and evaluation using MSE, SNR and correlation metrics"
       ],
       "startDate": "2025-09-01",
       "endDate": "",
