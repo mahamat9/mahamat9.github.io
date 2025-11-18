@@ -5,7 +5,7 @@ permalink: /projects/
 description: A collection of my main academic and personal projects.
 nav: true
 nav_order: 3
-display_categories: [academic, personal]
+display_categories: [academic, personal] # add professional cat. in future 
 horizontal: false
 ---
 

@@ -191,11 +191,11 @@
   ],
   "projects": [
     {
-      "name": "ECG Signal Denoising with Diffusion Models",
+      "name": "ECG Signal Denoising",
       "summary": "Personal project on denoising ECG signals.",
       "highlights": [
         "Simulation of various physiological noises (Gaussian, electrode motion, muscle artifacts) on real ECG signals",
-        "Training a autoencoder/diffusion model (DDPM) and evaluation using MSE, SNR and correlation metrics"
+        "Training a autoencoder/diffusion model and evaluation using MSE, SNR and correlation metrics"
       ],
       "startDate": "2025-09-01",
       "endDate": "",
@@ -205,9 +205,9 @@
       "name": "Object Detection",
       "summary": "Implementation of object detection pipelines using pre-trained and foundation models.",
       "highlights": [
-        "Implementation of detection pipelines using a pre-trained model (YOLO11) and a foundation model (DINO)",
+        "Implementation of object detection pipeline based on YOLOv11",
         "Fine-tuning the YOLO-based model to improve detection on the MinneApple dataset",
-        "Comparative analysis between classic YOLO and the DINO foundation model"
+        "Comparative of performance between classic YOLO and the DINO foundation model"
       ],
       "startDate": "2025-02-01",
       "endDate": "2025-02-28",
@@ -217,8 +217,20 @@
       "name": "Blood Cell Image Segmentation",
       "summary": "Development of a segmentation pipeline comparing U-Net and VGG16 with transfer learning.",
       "highlights": [
-        "Development of a segmentation pipeline comparing U-Net and VGG16 via weight transfer",
+        "Development of a segmentation pipeline comparing a U-Net and a VGG16 using weight transfer (or transfer learning)",
+        "Use of data normalization and augmentation techniques to improve model generalization",
         "Application of data augmentation and evaluation via Dice score and inverse IoU"
+      ],
+      "startDate": "2025-02-01",
+      "endDate": "2025-02-28",
+      "url": ""
+    },
+    {
+      "name": "NLP: classification and content generation",
+      "summary": "Study of language models for supervised and generative NLP tasks.",
+      "highlights": [
+        "Implementation of an article classification model (fake news vs. non–fake news)",
+        "Fine-tuning of an open model for article title generation based on content"
       ],
       "startDate": "2025-02-01",
       "endDate": "2025-02-28",
