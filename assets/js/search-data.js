@@ -394,19 +394,9 @@ ninja.data = [{
             },},{id: "news-graduated-with-msc-in-data-science-completed-my-internship-at-imt-atlantique-upcoming-valorization",
           title: '🎓 Graduated with MSc in Data Science! Completed my internship at IMT Atlantique...',
           description: "",
-          section: "News",},{id: "projects-diffusion-generative-models",
-          title: 'Diffusion Generative Models',
-          description: "Master&#39;s thesis on mathematical foundations and practical implementations",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/1_project/";
-            },},{id: "projects-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/2_project/";
-            },},{id: "projects-project-3-with-very-long-name",
-          title: 'project 3 with very long name',
-          description: "a project that redirects to another website",
+          section: "News",},{id: "projects-3-project",
+          title: '3_project',
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
             },},{id: "projects-project-4",
@@ -439,6 +429,16 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
+            },},{id: "projects-deep-image-processing-projects",
+          title: 'Deep image processing projects',
+          description: "Object detection and image segmentation",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/cv_project/";
+            },},{id: "projects-diffusion-generative-models",
+          title: 'Diffusion Generative Models',
+          description: "Master&#39;s thesis on mathematical foundations and practical implementations",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/diffusion_project/";
             },},{
         id: 'social-email',
         title: 'email',
