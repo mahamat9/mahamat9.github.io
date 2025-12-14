@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: projects
 title: Diffusion Generative Models #project 1
 description: Master's thesis on mathematical foundations and practical implementations #with background image
 img: assets/img/diffusion_illustration.png

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: projects
 title: Deep image processing projects
 description: Object detection and image segmentation
 img: assets/img/cv_illustration.jpg
@@ -9,7 +9,7 @@ giscus_comments: true
 github: https://github.com/mahamat9/deep-processing-images
 ---
 
-## Object Detection
+## [Object Detection](https://github.com/mahamat9/deep-processing-images/tree/main/TP%20Object%20Detection)
 
 **Implementation of detection pipelines**
 - Pre-trained model: YOLO11
@@ -29,7 +29,7 @@ github: https://github.com/mahamat9/deep-processing-images
     Left: YOLO11 detection results on MinneApple dataset. Right: DINO foundation model detection comparison.
 </div>
 
-## Blood Cell Image Segmentation
+## [Blood Cell Image Segmentation](https://github.com/mahamat9/deep-processing-images/tree/main/TP%20Segmentation)
 
 **Segmentation pipeline development**
 - U-Net architecture
@@ -48,10 +48,3 @@ github: https://github.com/mahamat9/deep-processing-images
 <div class="caption">
     Left: U-Net architecture segmentation results. Right: VGG16 with transfer learning results.
 </div>
-
-### Technologies
-
-- TensorFlow, PyTorch
-- OpenCV
-- YOLO, DINO
-- U-Net, VGG16
