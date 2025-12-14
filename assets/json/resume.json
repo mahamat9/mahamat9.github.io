@@ -1,12 +1,9 @@
 {
   "basics": {
     "name": "Mahamat Nour Bachar Mahamat",
-    "label": "Data Scientist",
-    "image": "",
+    "image": "/assets/img/pic_prof.jpg",
     "email": "mmahamatnour99@gmail.com",
-    "phone": "+33751560032",
-    "url": "https://mahamat9.github.io/",
-    "summary": "Recent Data Science graduate interested in leveraging data to solve concrete challenges in industrial and scientific domains, with an approach combining innovation and meaningful impact.",
+    "phone": "+33 7 51 56 00 32",
     "location": {
       "address": "",
       "postalCode": "",
@@ -27,7 +24,7 @@
       }
     ]
   },
-  "work": [
+  "works": [
     {
       "name": "IMT Atlantique/ENSTA, Brest",
       "position": "Research Intern - Marine Biodiversity Monitoring via Unsupervised Learning",
@@ -66,7 +63,7 @@
       "highlights": []
     }
   ],
-  "education": [
+  "educations": [
     {
       "institution": "University of Angers",
       "location": "Angers, France",
