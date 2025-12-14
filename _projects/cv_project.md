@@ -1,5 +1,5 @@
 ---
-layout: projects
+layout: page
 title: Deep image processing projects
 description: Object detection and image segmentation
 img: assets/img/cv_illustration.jpg
