@@ -12,6 +12,7 @@ github: https://github.com/mahamat9/deep-processing-images
 ## [Object Detection](https://github.com/mahamat9/deep-processing-images/tree/main/TP%20Object%20Detection)
 
 **Implementation of detection pipelines**
+
 - Pre-trained model: YOLO11
 - Foundation model: DINO
 - Fine-tuning YOLO on MinneApple dataset
@@ -32,6 +33,7 @@ github: https://github.com/mahamat9/deep-processing-images
 ## [Blood Cell Image Segmentation](https://github.com/mahamat9/deep-processing-images/tree/main/TP%20Segmentation)
 
 **Segmentation pipeline development**
+
 - U-Net architecture
 - VGG16 with transfer learning
 - Data augmentation techniques

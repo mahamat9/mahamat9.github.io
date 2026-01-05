@@ -36,16 +36,10 @@ Driven by the pursuit of meaningful impact, I aim to contribute to projects wher
 This site showcases my projects, from theoretical exploration to implementation. Feel free to explore my work and get in touch to discuss potential collaborations.
 
 **Key interests:**
+
 - Deep learning for medical applications
 - Image processing techniques
 - Generative AI and synthetic data
 - Mathematical foundations of machine learning
 
 **Available from February 2026 | Open to opportunities across France and remotely.**
-<!--
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
-
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
--->
