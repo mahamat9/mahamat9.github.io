@@ -3,7 +3,7 @@ layout: about
 title: About me
 permalink: /
 #subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
-subtitle: "Data Science MSc · Interests: Deep learning for health, deep image processing, generative models"
+subtitle: "Data Science MSc · Interests: Medical deep learning, image processing, generative AI, ML foundations"
 
 profile:
   align: right
@@ -11,8 +11,8 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Brest, France</p>
-    <p>Open to opportunities R&D / PhD, without location constraints</p>
-#<p><a href="/files/CV.pdf">CV (PDF)</a></p>
+    <p>Open to opportunities in <b>industrial R&D or academic research labs</b>, without location constraints.</p>
+#<p><a href="/files/CV.pdf">Full CV (PDF)</a></p>
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
@@ -27,20 +27,22 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-<!--
-I'm a Data Science graduate (MSc) passionate about developing innovative AI solutions, particularly in healthcare and image processing applications.
+I hold a Master of Science in Applied Mathematics with a specialization in Data Science from the University of Angers, building on a Bachelor's in Mathematics and the PluriPASS preparatory course. This academic path, initiated by a scientific baccalaureate in Chad, has provided me with a strong capacity for adaptation and a unique cross-cultural perspective.
 
-My expertise spans **deep learning**, **generative models** (diffusion models, GANs, VAEs), and **medical image analysis**. I recently completed my Master's thesis on the mathematical foundations of diffusion models and an internship at IMT Atlantique focusing on cutting-edge research applications.
+I am passionate about unlocking the potential of data and artificial intelligence to address tangible challenges at the intersection of science and industry. My training equipped me with a dual competency: **research-oriented expertise** in cutting-edge AI models (diffusion, foundation models) and **practical engineering skills** to design and deploy full-scale solutions. I have applied this knowledge across diverse domains—from denoising medical signals and analyzing blood cell images to building predictive models and deploying data visualization applications.
 
-I'm actively seeking **R&D positions or PhD opportunities** where I can contribute to advancing artificial intelligence in healthcare and develop impactful solutions through rigorous research and practical implementations.
+Driven by the pursuit of meaningful impact, I aim to contribute to projects where algorithmic innovation serves a **clear societal or industrial purpose**. I am actively seeking a role in **industrial R&D, an academic research lab, or a PhD** to push the boundaries of applied AI within a stimulating team.
+
+This site showcases my projects, from theoretical exploration to implementation. Feel free to explore my work and get in touch to discuss potential collaborations.
 
 **Key interests:**
 - Deep learning for medical applications
-- Advanced image processing techniques
+- Image processing techniques
 - Generative AI and synthetic data
 - Mathematical foundations of machine learning
 
-
+**Available from February 2026 | Open to opportunities across France and remotely.**
+<!--
 Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
 Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
