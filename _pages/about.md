@@ -70,4 +70,4 @@ Driven by the pursuit of meaningful impact, I aim to contribute to projects wher
 
 This site showcases my projects, from theoretical exploration to implementation. Feel free to explore my work and get in touch to discuss potential collaborations.
 
-**Available from February 2026 | Open to opportunities across France and remotely.**
+Available from February 2026 | Open to opportunities across France and remotely.
