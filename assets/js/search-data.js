@@ -401,7 +401,12 @@ ninja.data = [{
             },},{id: "news-graduated-with-msc-in-data-science-completed-my-internship-at-imt-atlantique-upcoming-valorization",
           title: '🎓 Graduated with MSc in Data Science! Completed my internship at IMT Atlantique...',
           description: "",
-          section: "News",},{id: "projects-3-project",
+          section: "News",},{id: "news-open-sourced-deep-ecg-denoising-project",
+          title: 'Open-sourced Deep ECG Denoising Project',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_3/";
+            },},{id: "projects-3-project",
           title: '3_project',
           description: "",
           section: "Projects",handler: () => {
@@ -446,6 +451,11 @@ ninja.data = [{
           description: "Master&#39;s thesis on mathematical foundations and practical implementations",
           section: "Projects",handler: () => {
               window.location.href = "/projects/diffusion_project/";
+            },},{id: "projects-ecg-denoising-with-deep-learning",
+          title: 'ECG Denoising with Deep Learning',
+          description: "Comparative study of a convolutional denoising autoencoder and a diffusion model on PTB-XL ECG signals.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/ecg_project/";
             },},{
         id: 'social-email',
         title: 'email',
