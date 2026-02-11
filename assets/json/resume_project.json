@@ -1,0 +1,153 @@
+  "projects": [
+    {
+      "name": "ECG Signal Denoising",
+      "summary": "Personal project on denoising ECG signals.",
+      "highlights": [
+        "Simulation of various physiological noises (Gaussian, electrode motion, muscle artifacts) on real ECG signals",
+        "Training a autoencoder/diffusion model and evaluation using MSE, SNR and correlation metrics"
+      ],
+      "startDate": "2025-09-01",
+      "endDate": "",
+      "url": ""
+    },
+    {
+      "name": "Object Detection",
+      "summary": "Implementation of object detection pipelines using pre-trained and foundation models.",
+      "highlights": [
+        "Implementation of object detection pipeline based on YOLOv11",
+        "Fine-tuning the YOLO-based model to improve detection on the MinneApple dataset",
+        "Comparative of performance between classic YOLO and the DINO foundation model"
+      ],
+      "startDate": "2025-02-01",
+      "endDate": "2025-02-28",
+      "url": "https://mahamat9.github.io/projects/cv_project/"
+    },
+    {
+      "name": "Blood Cell Image Segmentation",
+      "summary": "Development of a segmentation pipeline comparing U-Net and VGG16 with transfer learning.",
+      "highlights": [
+        "Development of a segmentation pipeline comparing a U-Net and a VGG16 using weight transfer (or transfer learning)",
+        "Use of data normalization and augmentation techniques to improve model generalization",
+        "Application of data augmentation and evaluation via Dice score and inverse IoU"
+      ],
+      "startDate": "2025-02-01",
+      "endDate": "2025-02-28",
+      "url": "https://mahamat9.github.io/projects/cv_project/"
+    },
+    {
+      "name": "NLP: classification and content generation",
+      "summary": "Study of language models for supervised and generative NLP tasks.",
+      "highlights": [
+        "Implementation of an article classification model (fake news vs. non–fake news)",
+        "Fine-tuning of an open model for article title generation based on content"
+      ],
+      "startDate": "2025-02-01",
+      "endDate": "2025-02-28"
+    },
+    {
+      "name": "Diffusion Generative Models (Master's Thesis)",
+      "summary": "Study of mathematical foundations and practical implementations of diffusion models.",
+      "highlights": [
+        "Study of mathematical foundations (SDE, time reversal) and implementation of practical applications",
+        "Comparative evaluation of diffusion models, GANs and VAEs on MNIST using the MML (Mean Max Logit) score",
+        "Critical analysis of strengths and limitations for synthetic data generation"
+      ],
+      "startDate": "2024-11-01",
+      "endDate": "2025-03-31",
+      "url": "https://mahamat9.github.io/projects/diffusion_project/"
+    },
+    {
+      "name": "Predictive Analysis on Breast Cancer Genetic Data",
+      "summary": "Preprocessing and predictive modeling on gene expression data.",
+      "highlights": [
+        "Preprocessing and normalization of gene expression data (GSE116 – GEO)",
+        "Selection of discriminant genes using statistical tests",
+        "Training and optimization of supervised models (logistic regression, SVM, random forests)"
+      ],
+      "startDate": "2024-12-01",
+      "endDate": "2025-01-31"
+    },
+    {
+      "name": "Generative Models (GANs & VAEs)",
+      "summary": "Benchmarking, development, and performance analysis of image generation algorithms using GANs and VAEs.",
+      "highlights": [
+        "Benchmarked image generation algorithms.",
+        "Developed and trained Generative Adversarial Networks (GAN) and Variational Autoencoders (VAE).",
+        "Analyzed results and compared the performance of generative models."
+      ],
+      "startDate": "2024-11-01",
+      "endDate": "2024-12-31",
+      "url": "https://github.com/mahamat9/Generative-Models"
+    },
+    {
+      "name": "Reinforcement Learning: DQN and PPO",
+      "summary": "Training agents on multiple environments and comparing algorithms.",
+      "highlights": [
+        "Training agents on multiple environments (GridWorld, CartPole)",
+        "Comparison of DQN with and without Experience Replay (prioritized or not) and Target Network",
+        "Implementation of PPO (Proximal Policy Optimization) with adaptive KL cost"
+      ],
+      "startDate": "2024-10-01",
+      "endDate": "2024-12-31"
+    },
+    {
+      "name": "Approximate Bayesian Computation with Random Forests (Master 1 Thesis)",
+      "summary": "Development of an ABC model based on random forests for model selection in population genetics.",
+      "highlights": [
+        "Development of an ABC model based on random forests for model choice in population genetics",
+        "Performance evaluation on simulated data, then application to inference of Asian rice evolutionary history"
+      ],
+      "startDate": "2024-02-01",
+      "endDate": "2024-05-31",
+      "url": "https://github.com/mahamat9/Projet-de-recherche-ABC-RF"
+    },
+    {
+      "name": "Database and Web Application – Enron Dataset",
+      "summary": "Data extraction and interactive web interface development.",
+      "highlights": [
+        "Data extraction using regular expressions (regex) and populating a PostgreSQL database",
+        "Development of a web interface under Django for interactive visualization"
+      ],
+      "startDate": "2024-01-01",
+      "endDate": "2024-05-31",
+      "url": ""
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming",
+      "level": "Advanced",
+      "icon": "fa-solid fa-code",
+      "keywords": ["Python", "C++ (intro level)", "R", "SQL"]
+    },
+    {
+      "name": "Programming Paradigms",
+      "level": "Advanced",
+      "icon": "fa-solid fa-cogs",
+      "keywords": ["Asynchronous programming", "Parallel and concurrent programming"]
+    },
+    {
+      "name": "Natural Language Processing",
+      "level": "Intermediate",
+      "icon": "fa-solid fa-language",
+      "keywords": ["Tokenization", "Embeddings", "Text classification", "Text generation", "Model fine-tuning"]
+    },
+    {
+      "name": "Machine Learning Paradigms",
+      "level": "Advanced",
+      "icon": "fa-solid fa-brain",
+      "keywords": ["Supervised learning", "Unsupervised learning", "Semi-supervised learning", "Reinforcement learning", "Transfer learning"]
+    },
+    {
+      "name": "Data Engineering",
+      "level": "Intermediate",
+      "icon": "fa-solid fa-database",
+      "keywords": ["Web scraping", "Django/Flask", "NoSQL (MongoDB)"]
+    },
+    {
+      "name": "Tools",
+      "level": "Advanced",
+      "icon": "fa-solid fa-tools",
+      "keywords": ["PowerBI", "LaTeX", "Git", "Unix", "Docker"]
+    }
+  ],

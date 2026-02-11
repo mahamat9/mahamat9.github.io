@@ -29,7 +29,7 @@ latest_posts:
 
 I hold an MSc in Applied Mathematics (Data Science) from the University of Angers, following a BSc in Mathematics and PluriPASS (former PACES). I am interested in applied AI for impactful problems at the intersection of science and industry.
 
-# **Academic Mentors & Project Supervisors:**
+### Academic Mentors & Project Supervisors:
 
 - Image Processing & Computer Vision: Supervised by Pr. [David Rousseau](https://eng-irhs.angers-nantes.hub.inrae.fr/research/imaging-for-horticulture-and-phenotyping/l-equipe/david-rousseau). Guided my work on blood cell image segmentation and object detection using transfer learning, forming my foundation in medical image analysis.
 
@@ -37,7 +37,7 @@ I hold an MSc in Applied Mathematics (Data Science) from the University of Anger
 
 - Audio Signal Processing Internship: Supervised by [Axel Marmoret](https://ax-le.github.io/) and [Dorian Cazau](https://labsticc.fr/fr/annuaire/cazau-dorian), focused on NMF for sound event detection and source separation.
 
-# **Academic Projects**
+### Academic Projects
 
 My work is characterized by a dual competency: research on AI models and practical engineering to design functional solutions.
 
@@ -47,4 +47,4 @@ My work is characterized by a dual competency: research on AI models and practic
 
 This site showcases my projects, from theoretical exploration to implementation. Feel free to explore my work and get in touch to discuss potential collaborations.
 
-**I am actively seeking a role in industrial R&D, an academic research lab, or a PhD to further pursue these interests.**
+**I am seeking a role in industrial R&D, an academic research lab, or a PhD to further pursue these interests.**
