@@ -25,7 +25,7 @@ ninja.data = [{
           },
         },{id: "nav-my-curriculum-vitæ",
           title: "My Curriculum vitæ",
-          description: "Download my CV.",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
@@ -453,7 +453,7 @@ ninja.data = [{
               window.location.href = "/projects/diffusion_project/";
             },},{id: "projects-ecg-denoising-with-deep-learning",
           title: 'ECG Denoising with Deep Learning',
-          description: "Comparative study of a convolutional denoising autoencoder and a diffusion model on PTB-XL ECG signals.",
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/ecg_project/";
             },},{
