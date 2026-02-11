@@ -29,11 +29,7 @@ latest_posts:
 
 I hold an MSc in Applied Mathematics (Data Science) from the University of Angers, following a BSc in Mathematics and PluriPASS (former PACES). I am interested in applied AI for impactful problems at the intersection of science and industry.
 
-**Academic & Research Affiliations**
-
-My primary academic training and research projects were conducted at the University of Angers.
-
-**Key Academic Mentors & Project Supervisors:**
+# **Academic Mentors & Project Supervisors:**
 
 - Image Processing & Computer Vision: Supervised by Pr. [David Rousseau](https://eng-irhs.angers-nantes.hub.inrae.fr/research/imaging-for-horticulture-and-phenotyping/l-equipe/david-rousseau). Guided my work on blood cell image segmentation and object detection using transfer learning, forming my foundation in medical image analysis.
 
@@ -41,17 +37,14 @@ My primary academic training and research projects were conducted at the Univers
 
 - Audio Signal Processing Internship: Supervised by [Axel Marmoret](https://ax-le.github.io/) and [Dorian Cazau](https://labsticc.fr/fr/annuaire/cazau-dorian), focused on NMF for sound event detection and source separation.
 
-Master's Thesis (M2): focused on the mathematical foundations and applications of diffusion models.
-
-**Academic Projects**
+# **Academic Projects**
 
 My work is characterized by a dual competency: research on AI models and practical engineering to design functional solutions.
 
-- **Computer Vision for Health:** Application of deep learning models for semantic and instance segmentation of blood cell images, and object detection using transfer learning.
+- **Computer Vision for Health:** Application of deep learning models for segmentation of blood cell images, and object detection using transfer learning.
 
 - **Full-Stack Data Applications:** Conception and deployment of a complete web application (Django, SQL) for the visualization and exploration of complex datasets (Enron corpus).
 
+This site showcases my projects, from theoretical exploration to implementation. Feel free to explore my work and get in touch to discuss potential collaborations.
 
 **I am actively seeking a role in industrial R&D, an academic research lab, or a PhD to further pursue these interests.**
-
-This site showcases my projects, from theoretical exploration to implementation. Feel free to explore my work and get in touch to discuss potential collaborations.
