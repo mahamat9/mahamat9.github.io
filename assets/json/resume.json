@@ -21,6 +21,11 @@
         "network": "GitHub",
         "username": "mahamat9",
         "url": "https://github.com/mahamat9"
+      },
+      {
+        "network": "Personal Website",
+        "username": "mahamat9.github.io",
+        "url": "https://mahamat9.github.io"
       }
     ]
   },
@@ -111,75 +116,6 @@
       "endDate": "2018-08-31",
       "score": "National Rank: 22nd/79,136",
       "courses": []
-    }
-  ],
-  "skills": [
-    {
-      "name": "Programming",
-      "level": "Advanced",
-      "icon": "fa-solid fa-code",
-      "keywords": ["Python", "C++ (intro level)", "R", "SQL"]
-    },
-    {
-      "name": "Programming Paradigms",
-      "level": "Advanced",
-      "icon": "fa-solid fa-cogs",
-      "keywords": ["Asynchronous programming", "Parallel and concurrent programming"]
-    },
-    {
-      "name": "Natural Language Processing",
-      "level": "Intermediate",
-      "icon": "fa-solid fa-language",
-      "keywords": ["Tokenization", "Embeddings", "Text classification", "Text generation", "Model fine-tuning"]
-    },
-    {
-      "name": "Machine Learning Paradigms",
-      "level": "Advanced",
-      "icon": "fa-solid fa-brain",
-      "keywords": ["Supervised learning", "Unsupervised learning", "Semi-supervised learning", "Reinforcement learning", "Transfer learning"]
-    },
-    {
-      "name": "Data Engineering",
-      "level": "Intermediate",
-      "icon": "fa-solid fa-database",
-      "keywords": ["Web scraping", "Django/Flask", "NoSQL (MongoDB)"]
-    },
-    {
-      "name": "Tools",
-      "level": "Advanced",
-      "icon": "fa-solid fa-tools",
-      "keywords": ["PowerBI", "LaTeX", "Git", "Unix", "Docker"]
-    }
-  ],
-  "languages": [
-    {
-      "language": "French",
-      "fluency": "Bilingual",
-      "icon": ""
-    },
-    {
-      "language": "English",
-      "fluency": "Professional (reading/writing, intermediate speaking)",
-      "icon": ""
-    },
-    {
-      "language": "Arabic",
-      "fluency": "Native/Bilingual",
-      "icon": ""
-    }
-  ],
-  "interests": [
-    {
-      "name": "Hobbies",
-      "icon": "fa-solid fa-heart",
-      "keywords": ["Historical documentaries", "Board games", "Running"]
-    }
-  ],
-  "references": [
-    {
-      "name": "Dr. Axel Marmoret",
-      "icon": "fa-solid fa-user",
-      "reference": "Researcher – Lab-STICC (IMT Atlantique Brest). Internship supervisor: Passive acoustic monitoring project. Contact: axel.marmoret@imt-atlantique.fr"
     }
   ],
   "projects": [
@@ -295,6 +231,73 @@
       "startDate": "2024-01-01",
       "endDate": "2024-05-31",
       "url": ""
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming",
+      "level": "Advanced",
+      "icon": "fa-solid fa-code",
+      "keywords": ["Python", "C++ (intro level)", "R", "SQL"]
+    },
+    {
+      "name": "Programming Paradigms",
+      "level": "Advanced",
+      "icon": "fa-solid fa-cogs",
+      "keywords": ["Asynchronous programming", "Parallel and concurrent programming"]
+    },
+    {
+      "name": "Natural Language Processing",
+      "level": "Intermediate",
+      "icon": "fa-solid fa-language",
+      "keywords": ["Tokenization", "Embeddings", "Text classification", "Text generation", "Model fine-tuning"]
+    },
+    {
+      "name": "Machine Learning Paradigms",
+      "level": "Advanced",
+      "icon": "fa-solid fa-brain",
+      "keywords": ["Supervised learning", "Unsupervised learning", "Semi-supervised learning", "Reinforcement learning", "Transfer learning"]
+    },
+    {
+      "name": "Data Engineering",
+      "level": "Intermediate",
+      "icon": "fa-solid fa-database",
+      "keywords": ["Web scraping", "Django/Flask", "NoSQL (MongoDB)"]
+    },
+    {
+      "name": "Tools",
+      "level": "Advanced",
+      "icon": "fa-solid fa-tools",
+      "keywords": ["PowerBI", "LaTeX", "Git", "Unix", "Docker"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "French",
+      "fluency": "Bilingual",
+      "icon": ""
+    },
+    {
+      "language": "English",
+      "fluency": "Professional (reading/writing, intermediate speaking)",
+      "icon": ""
+    },
+    {
+      "language": "Arabic",
+      "fluency": "Native/Bilingual",
+      "icon": ""
+    },
+    {
+      "language": "Dazaga",
+      "fluency": "Native",
+      "icon": ""
+    }
+  ],
+  "interests": [
+    {
+      "name": "Hobbies",
+      "icon": "fa-solid fa-heart",
+      "keywords": ["Historical documentaries", "Board games", "Running"]
     }
   ]
 }

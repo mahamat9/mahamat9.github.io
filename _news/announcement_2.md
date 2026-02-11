@@ -14,4 +14,4 @@ This work was completed as part of my Master's program at Université d'Angers, 
 
 📄 [Full Report Available on GitHub](https://github.com/mahamat9/diffusion_model_M2DSUA/blob/main/rapport/TER_Diffusion_Model.pdf)
 
-🔗 [Project Details](/projects/1_project/)
+🔗 [Project Details](/projects/diffusion_project/)

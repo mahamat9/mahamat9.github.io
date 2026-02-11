@@ -1,7 +1,7 @@
 ---
 layout: page
 title: ECG Denoising with Deep Learning
-description: Comparative study of a convolutional denoising autoencoder and a diffusion model on PTB-XL ECG signals.
+description: #Comparative study of a convolutional denoising autoencoder and a diffusion model on PTB-XL ECG signals.
 img: assets/img/deep_ecg_illustration.png
 importance: 1 # or 3
 category: personal
@@ -30,4 +30,4 @@ We simulate common ECG perturbations by mixing Gaussian noise, baseline wander, 
 - Metrics: MSE, Cross-correlation and SNR improvement
 
 ## Code and Assets
-- GitHub repository: https://github.com/mahamat9/deep-denoising-ecg
+- [GitHub repository](https://github.com/mahamat9/deep-denoising-ecg)

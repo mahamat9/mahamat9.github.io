@@ -8,5 +8,5 @@ related_posts: false
 
 I just published my ECG denoising project comparing a convolutional autoencoder and a diffusion model on PTB-XL.
 
-- GitHub: https://github.com/mahamat9/deep-denoising-ecg
-- Project page: /projects/
+- [GitHub](https://github.com/mahamat9/deep-denoising-ecg)
+- [Project details](/projects/ecg_project/)
