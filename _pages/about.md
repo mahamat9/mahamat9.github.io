@@ -27,24 +27,40 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I hold an MSc in Applied Mathematics (Data Science) from the University of Angers, following a BSc in Mathematics and PluriPASS (former PACES). I am interested in applied AI for impactful problems at the intersection of science and industry.
+### Applied AI
 
-### Academic Mentors & Project Supervisors:
+I hold an MSc in Applied Mathematics (Data Science) from the University of Angers, with a strong foundation in mathematics, signal processing, and data engineering—rooted in my BSc in Mathematics and initial studies in Health Science (PluriPASS, former PACES). My work sits at the crossroads of theoretical rigor and practical innovation, with a focus on applying AI to solve impactful, real-world problems.
 
-- Image Processing & Computer Vision: Supervised by Pr. [David Rousseau](https://eng-irhs.angers-nantes.hub.inrae.fr/research/imaging-for-horticulture-and-phenotyping/l-equipe/david-rousseau). Guided my work on blood cell image segmentation and object detection using transfer learning, forming my foundation in medical image analysis.
+#### Mentorship & Collaborations
 
-- Generative Models (GANs/VAEs) & NLP Initiation: Supervised by Dr. [Sylvain Lamprier](https://scholar.google.com/citations?user=NuGN8SUAAAAJ&hl=en). Oversaw my introductory projects in generative adversarial networks (GANs), variational autoencoders (VAEs), and natural language processing (NLP) for text classification and text generation.
+My academic and research journey has been shaped by collaborations with leading experts:
 
-- Audio Signal Processing Internship: Supervised by [Axel Marmoret](https://ax-le.github.io/) and [Dorian Cazau](https://labsticc.fr/fr/annuaire/cazau-dorian), focused on NMF for sound event detection and source separation.
+- **Image Processing & Computer Vision**
+Supervised by [Pr. David Rousseau](https://eng-irhs.angers-nantes.hub.inrae.fr/research/imaging-for-horticulture-and-phenotyping/l-equipe/david-rousseau), I developed expertise in image processing in my 2nd year of MSc.
 
-### Academic Projects
+- **Generative Models & NLP**
+Under the guidance of [Dr. Sylvain Lamprier](https://scholar.google.com/citations?user=NuGN8SUAAAAJ&hl=en), I explored generative adversarial networks (GAN), variational autoencoders (VAE), and NLP for text classification and generation, until in my 2nd year of MSc.
 
-My work is characterized by a dual competency: research on AI models and practical engineering to design functional solutions.
+- **Audio Signal Processing**
+During an internship with [Dr. Axel Marmoret](https://ax-le.github.io/) and [Dr. Dorian Cazau](https://labsticc.fr/fr/annuaire/cazau-dorian), I worked on NMF for sound event detection and source separation.
 
-- **Computer Vision for Health:** Application of deep learning models for segmentation of blood cell images, and object detection using transfer learning.
+#### Key Projects
 
-- **Full-Stack Data Applications:** Conception and deployment of a complete web application (Django, SQL) for the visualization and exploration of complex datasets (Enron corpus).
+##### Computer Vision for Health
 
-This site showcases my projects, from theoretical exploration to implementation. Feel free to explore my work and get in touch to discuss potential collaborations.
+Designed and implemented deep learning pipelines for [blood cell image segmentation and object detection](https://mahamat9.github.io/projects/cv_project/), leveraging transfer learning to optimize performance and scalability.
 
-**I am seeking a role in industrial R&D, an academic research lab, or a PhD to further pursue these interests.**
+##### Full-Stack Data Applications
+
+Built and deployed a web application (Django, SQL) for visualizing and exploring complex datasets (e.g., Enron corpus), demonstrating my ability to bridge data science and software engineering([Code](https://github.com/mahamat9/Base-de-donnees-et-Application-web-sur-donnees-Enron)).
+
+##### Generative AI & Signal Processing
+
+Developed projects in [GAN, VAE](https://github.com/mahamat9/Generative-Models), and NLP, with a focus on generative models and audio signal processing—applying mathematical rigor to innovative AI solutions.
+
+------
+
+**Looking ahead**
+
+I am passionate about translating cutting-edge AI research into practical, impactful solutions—whether in industrial R&D, academic research, or a PhD program. My goal is to contribute to projects that push the boundaries of applied AI, particularly in healthcare, sustainable agriculture, and scientific discovery.
+Let’s connect to explore collaborations, research opportunities, or innovative projects where AI can make a difference.
