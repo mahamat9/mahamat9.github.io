@@ -20,4 +20,10 @@ This Master's thesis explores the mathematical foundations and practical applica
 - **Comparative evaluation**: Benchmarked diffusion models against GANs and VAEs on MNIST using Mean Max Logit (MML) score
 - **Critical analysis**: Identified strengths and limitations for data generation
 
-[Read the full report](https://github.com/mahamat9/diffusion_model_M2DSUA/blob/main/rapport/TER_Diffusion_Model.pdf)
+---
+
+<div style="text-align: center; margin: 2.5rem 0;">
+  <a href="https://github.com/mahamat9/diffusion_model_M2DSUA/blob/main/rapport/TER_Diffusion_Model.pdf" class="btn btn-primary" role="button" target="_blank">
+    Read the full report
+  </a>
+</div>

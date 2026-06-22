@@ -1,0 +1,58 @@
+<!-- Mermaid diagram block -->
+<div class="mermaid">
+classDiagram
+class BaseLivre {
+    <<abstract>>
+    + titre: str
+    + auteur: str
+    + format: str
+    + get_infos() str
+    + get_liens() list
+}
+class LivreEpub {
+    + parse_epub()
+    + get_metadata()
+}
+class LivrePdf {
+    + parse_pdf()
+    + get_metadata()
+}
+class BaseBibli {
+    <<abstract>>
+    + livres: list
+    + repertoire: str
+    + ajouter_livre()
+    + supprimer_livre()
+    + lister_livres()
+}
+class SimpleBibli {
+    + rapports_dir: str
+    + max_livres: int
+    + generer_rapport()
+}
+class BibliScrap {
+    + url: str
+    + depth: int
+    + scraper_url()
+    + extraire_livres()
+}
+class FonctionsBibli {
+    + lire_config()
+    + valider_url()
+    + formater_rapport()
+}
+class Bibli {
+    + main()
+    + parser_arguments()
+    + lancement()
+}
+
+BaseLivre <|-- LivreEpub
+BaseLivre <|-- LivrePdf
+BaseBibli <|-- SimpleBibli
+Bibli --> BibliScrap
+Bibli --> SimpleBibli
+Bibli --> FonctionsBibli
+BibliScrap --> BaseLivre
+SimpleBibli --> BaseLivre
+</div>
