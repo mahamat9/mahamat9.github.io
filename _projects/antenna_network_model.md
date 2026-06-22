@@ -43,12 +43,13 @@ $$
 ### Questions 1–2 — Theoretical Analysis
 
 Study of the matrix $A$:
+
 - **Symmetry** and **positive definiteness** via the spectral structure of Toeplitz matrices
 - Analysis of the **condition number** as $$n \to \infty$$ and $$\tau \to 0$$
 
 Key reference used:
 
-> **Gray, R.M.** — *Toeplitz and Circulant Matrices: A Review*, Foundations and Trends in Communications and Information Theory, 2006.
+> **Gray, R.M.** — _Toeplitz and Circulant Matrices: A Review_, Foundations and Trends in Communications and Information Theory, 2006.
 
 ---
 
@@ -58,11 +59,11 @@ The inverse problem: given target effective powers $\boldsymbol{\pi}$, find nomi
 
 Three implementations of the matrix $A$ were compared:
 
-| Version | $$n=100$$ | $$n=1000$$ |
-|---|---|---|
-| v1 (upper tri + symmetry) | 5.41 ms | 548 ms |
-| v2 (full double loop) | 8.91 ms | 1.15 s |
-| v3 (upper tri only) | 5.98 ms | 643 ms |
+| Version                   | $$n=100$$ | $$n=1000$$ |
+| ------------------------- | --------- | ---------- |
+| v1 (upper tri + symmetry) | 5.41 ms   | 548 ms     |
+| v2 (full double loop)     | 8.91 ms   | 1.15 s     |
+| v3 (upper tri only)       | 5.98 ms   | 643 ms     |
 
 **Version 1** is fastest. Resolution via hand-coded **LU factorization**:
 
@@ -71,9 +72,9 @@ A = LU \implies L\mathbf{y} = \boldsymbol{\pi}, \quad U\mathbf{x} = \mathbf{y}
 $$
 
 | $$n$$ | LU time |
-|---|---|
-| 20 | 3.41 ms |
-| 1000 | 7.57 s |
+| ----- | ------- |
+| 20    | 3.41 ms |
+| 1000  | 7.57 s  |
 
 ---
 
@@ -95,10 +96,10 @@ $$
 
 **Step 2** — Update solution vector $\mathbf{x}$ incrementally.
 
-| $$n$$ | LU | Toeplitz |
-|---|---|---|
-| 20 | 3.41 ms | 3.25 ms |
-| 1000 | **7.57 s** | **396 ms** |
+| $$n$$ | LU         | Toeplitz   |
+| ----- | ---------- | ---------- |
+| 20    | 3.41 ms    | 3.25 ms    |
+| 1000  | **7.57 s** | **396 ms** |
 
 **≈ 19× speedup** at $n=1000$ — no matrix storage required.
 

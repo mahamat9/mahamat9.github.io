@@ -55,11 +55,11 @@ $$\sqrt{n}\big(\hat{\theta}_n - g(\mu)\big) \overset{d}{\to} \mathcal{N}\big(0,\
 
 ### Estimators Studied
 
-| Estimator | Expression | Bias under dependence | Asymptotic variance |
-|---|---|---|---|
-| **Sample mean** $\bar{X}_N$ | $\frac{1}{N}\sum_i X_i$ | $E[\bar{X}] = \mu$ | $\frac{1}{N}\mathrm{Var}(X_0) + \frac{2}{N^2}\sum_{k=1}^{N-1}(N-k)\mathrm{Cov}(X_0,X_k)$ |
-| **Sample variance** $S_N^2$ | $\frac{1}{N}\sum_i (X_i-\bar{X})^2$ | $E[S_N^2] = \sigma^2 + \frac{2}{N^2}\sum\gamma_{j-i}$ | $\approx \frac{1}{N^2}\sum\gamma_{j-i}^2$ |
-| **Quantiles** | $Q_\alpha = F^{-1}(\alpha)$ | Affected by mixing | Controlled via DMR |
+| Estimator                   | Expression                          | Bias under dependence                                 | Asymptotic variance                                                                      |
+| --------------------------- | ----------------------------------- | ----------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| **Sample mean** $\bar{X}_N$ | $\frac{1}{N}\sum_i X_i$             | $E[\bar{X}] = \mu$                                    | $\frac{1}{N}\mathrm{Var}(X_0) + \frac{2}{N^2}\sum_{k=1}^{N-1}(N-k)\mathrm{Cov}(X_0,X_k)$ |
+| **Sample variance** $S_N^2$ | $\frac{1}{N}\sum_i (X_i-\bar{X})^2$ | $E[S_N^2] = \sigma^2 + \frac{2}{N^2}\sum\gamma_{j-i}$ | $\approx \frac{1}{N^2}\sum\gamma_{j-i}^2$                                                |
+| **Quantiles**               | $Q_\alpha = F^{-1}(\alpha)$         | Affected by mixing                                    | Controlled via DMR                                                                       |
 
 ---
 
@@ -74,13 +74,13 @@ $$\sqrt{n}\big(\hat{\theta}_n - g(\mu)\big) \overset{d}{\to} \mathcal{N}\big(0,\
 
 ## Key Results
 
-| Result | Finding |
-|---|---|
-| Sample mean CLT | $\sqrt{N}(\bar{X}_N - \mu)$ converges to $\mathcal{N}(0,1)$ under AR(1) dependence |
-| Variance bias | $E[S_N^2] = \sigma^2 + O\big(\frac{1}{N}\sum\gamma_k\big)$ — negligible if autocorrelation decays fast |
-| m-dependence | $\alpha(n)=0$ for $n>m$ → DMR condition satisfied if $X_0^2$ integrable |
-| Mixing decay | AR(1) decays exponentially; MA(1) slower; Gaussian noise already $\alpha$-mixing |
-| Variance estimator consistency | Requires $\sum_k \gamma_k^2 < \infty$; fails for long-memory processes |
+| Result                         | Finding                                                                                                |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------ |
+| Sample mean CLT                | $\sqrt{N}(\bar{X}_N - \mu)$ converges to $\mathcal{N}(0,1)$ under AR(1) dependence                     |
+| Variance bias                  | $E[S_N^2] = \sigma^2 + O\big(\frac{1}{N}\sum\gamma_k\big)$ — negligible if autocorrelation decays fast |
+| m-dependence                   | $\alpha(n)=0$ for $n>m$ → DMR condition satisfied if $X_0^2$ integrable                                |
+| Mixing decay                   | AR(1) decays exponentially; MA(1) slower; Gaussian noise already $\alpha$-mixing                       |
+| Variance estimator consistency | Requires $\sum_k \gamma_k^2 < \infty$; fails for long-memory processes                                 |
 
 ---
 

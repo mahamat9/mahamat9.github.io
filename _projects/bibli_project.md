@@ -87,14 +87,14 @@ max_livres = 1000
 
 ## Tech Stack
 
-| Component | Technology |
-|-----------|------------|
-| Language | Python 3 |
-| Web Scraping | BeautifulSoup4 |
-| EPUB Parsing | ebooklib |
-| PDF Parsing | PyPDF2 |
-| Reports | EPUB generation + PDF export |
-| Config | Python config file (`.conf`) |
+| Component    | Technology                   |
+| ------------ | ---------------------------- |
+| Language     | Python 3                     |
+| Web Scraping | BeautifulSoup4               |
+| EPUB Parsing | ebooklib                     |
+| PDF Parsing  | PyPDF2                       |
+| Reports      | EPUB generation + PDF export |
+| Config       | Python config file (`.conf`) |
 
 ---
 

@@ -13,7 +13,7 @@ mailto: mmahamatnour99@gmail.com
 **Duration:** January 2023 – May 2023  
 **Supervisors:** Mohammed El Amrani — Université d'Angers  
 **Co-authors:** K. Le Bihan, M. Hedde  
-**Reference:** Kurtz, D.C. — *A sufficient condition for all the roots of a polynomial to be real*, The American Mathematical Monthly, Vol. 99, No. 3, Mar. 1992, pp. 259–263.
+**Reference:** Kurtz, D.C. — _A sufficient condition for all the roots of a polynomial to be real_, The American Mathematical Monthly, Vol. 99, No. 3, Mar. 1992, pp. 259–263.
 
 ---
 
@@ -111,19 +111,19 @@ where $$\Theta(A, k) = a_k^2 / (a_{k-1} a_{k+1})$$.
 
 ## Summary Table
 
-| Result | Condition | Conclusion |
-|---|---|---|
-| Newton (necessary) | All roots real | $$a_k^2 \geq \frac{n-k+1}{n-k}\frac{k+1}{k} a_{k-1}a_{k+1}$$ |
-| Kurtz (sufficient) | $$a_k > 0$$ and $$a_k^2 \geq 4a_{k-1}a_{k+1}$$ | All roots real and simple |
-| Optimality | $$\gamma < 4$$ | Condition insufficient |
+| Result             | Condition                                      | Conclusion                                                   |
+| ------------------ | ---------------------------------------------- | ------------------------------------------------------------ |
+| Newton (necessary) | All roots real                                 | $$a_k^2 \geq \frac{n-k+1}{n-k}\frac{k+1}{k} a_{k-1}a_{k+1}$$ |
+| Kurtz (sufficient) | $$a_k > 0$$ and $$a_k^2 \geq 4a_{k-1}a_{k+1}$$ | All roots real and simple                                    |
+| Optimality         | $$\gamma < 4$$                                 | Condition insufficient                                       |
 
 ---
 
 ## Tools & Methods
 
-- Elementary symmetric functions & Newton's identities  
-- Cauchy-Schwarz and AM-GM inequalities  
-- Intermediate Value Theorem & compactness arguments  
+- Elementary symmetric functions & Newton's identities
+- Cauchy-Schwarz and AM-GM inequalities
+- Intermediate Value Theorem & compactness arguments
 - Induction on polynomial degree
 
 ---

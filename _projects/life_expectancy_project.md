@@ -19,13 +19,13 @@ github: https://github.com/mahamat9/Econometric-Life-Expectancy
 
 ## Overview
 
-| Field | Detail |
-|---|---|
-| **Type** | Academic project — End of course |
-| **Course** | Méthodes Économétriques (C. Daniel) · M2 Data Science, Université d'Angers |
-| **Authors** | Mahamat-Nour Bachar Mahamat |
-| **Duration** | March – June 2025 |
-| **Deliverables** | Report (PDF) · Python notebook · R notebook |
+| Field            | Detail                                                                     |
+| ---------------- | -------------------------------------------------------------------------- |
+| **Type**         | Academic project — End of course                                           |
+| **Course**       | Méthodes Économétriques (C. Daniel) · M2 Data Science, Université d'Angers |
+| **Authors**      | Mahamat-Nour Bachar Mahamat                                                |
+| **Duration**     | March – June 2025                                                          |
+| **Deliverables** | Report (PDF) · Python notebook · R notebook                                |
 
 ---
 
@@ -37,21 +37,21 @@ Life expectancy is one of the most fundamental indicators of human development �
 
 ## Dataset
 
-| Feature | Detail |
-|---|---|
-| **Source** | WHO Global Health Observatory (GHO) · United Nations Economic Data |
-| **Coverage** | 193 countries, 2000–2015 (16-year panel) |
-| **Observations** | ~2 938 rows × 22 variables |
-| **Missing values** | Imputed by country mean (then global mean fallback) |
+| Feature            | Detail                                                             |
+| ------------------ | ------------------------------------------------------------------ |
+| **Source**         | WHO Global Health Observatory (GHO) · United Nations Economic Data |
+| **Coverage**       | 193 countries, 2000–2015 (16-year panel)                           |
+| **Observations**   | ~2 938 rows × 22 variables                                         |
+| **Missing values** | Imputed by country mean (then global mean fallback)                |
 
 **Variable categories:**
 
-| Category | Examples |
-|---|---|
-| Immunization | Hepatitis B, Polio, Diphtheria vaccine coverage (%) |
-| Mortality | Adult mortality rate, infant deaths, under-five deaths, HIV/AIDS |
-| Economic | GDP per capita, total health expenditure (% GDP), Income Composition Index |
-| Social / Lifestyle | Schooling (years), BMI, Alcohol consumption, Thinness prevalence |
+| Category           | Examples                                                                   |
+| ------------------ | -------------------------------------------------------------------------- |
+| Immunization       | Hepatitis B, Polio, Diphtheria vaccine coverage (%)                        |
+| Mortality          | Adult mortality rate, infant deaths, under-five deaths, HIV/AIDS           |
+| Economic           | GDP per capita, total health expenditure (% GDP), Income Composition Index |
+| Social / Lifestyle | Schooling (years), BMI, Alcohol consumption, Thinness prevalence           |
 
 ---
 
@@ -71,7 +71,7 @@ Panel data (countries × years) require a model that captures **group-level hete
 
 $$\text{LifeExp}_{it} = X_{it}^\top \beta + u_i + v_t + \varepsilon_{it}$$
 
-*Fixed effects* (β) estimate the average effect of each covariate; *random effects* (u_i, v_t) absorb unobserved country/year heterogeneity. This dramatically reduces omitted-variable bias compared to pooled OLS.
+_Fixed effects_ (β) estimate the average effect of each covariate; _random effects_ (u_i, v_t) absorb unobserved country/year heterogeneity. This dramatically reduces omitted-variable bias compared to pooled OLS.
 
 > **Key finding:** After accounting for country-level heterogeneity, the GDP effect shrinks — confirming prior endogeneity. The Income Composition Index remains the most robust predictor.
 
@@ -91,14 +91,14 @@ Comparing developed vs. developing countries is confounded by many factors. **Pr
 
 ## Key Results
 
-| Variable | OLS β | Interpretation |
-|---|---|---|
-| GDP per capita | +0.00028 / USD | Positive but diminishing returns |
-| Schooling | +0.62 yrs | Each additional school year ≈ +0.6 yr life expectancy |
-| Income Composition Index | +6.8 pts | Strongest predictor; holistic measure of development |
-| Adult Mortality | −0.027 /‰ | Strongest negative; proxy for healthcare system quality |
-| HIV/AIDS | −0.44 /‰ | Devastating impact on population longevity |
-| Diphtheria Vaccine | +0.038 /% | Robust public health signal |
+| Variable                 | OLS β          | Interpretation                                          |
+| ------------------------ | -------------- | ------------------------------------------------------- |
+| GDP per capita           | +0.00028 / USD | Positive but diminishing returns                        |
+| Schooling                | +0.62 yrs      | Each additional school year ≈ +0.6 yr life expectancy   |
+| Income Composition Index | +6.8 pts       | Strongest predictor; holistic measure of development    |
+| Adult Mortality          | −0.027 /‰      | Strongest negative; proxy for healthcare system quality |
+| HIV/AIDS                 | −0.44 /‰       | Devastating impact on population longevity              |
+| Diphtheria Vaccine       | +0.038 /%      | Robust public health signal                             |
 
 ---
 
@@ -123,4 +123,4 @@ Report          LaTeX (memoir class) · A4, 31 pages
   </a>
 </p>
 
-*Contains: full report (PDF), Python notebook, R notebook, and data preprocessing scripts.*
+_Contains: full report (PDF), Python notebook, R notebook, and data preprocessing scripts._
