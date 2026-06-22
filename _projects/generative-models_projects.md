@@ -2,7 +2,7 @@
 layout: page
 title: Generative Models — GAN & VAE
 description: Implementation and experimentation of GAN and VAE architectures on MNIST and CelebA
-img: assets/img/gan-vae_architectures.png
+img: assets/img/gan_vae-architectures.png
 importance: 3
 category: academic
 github: https://github.com/mahamat9/Generative-Models
@@ -50,7 +50,7 @@ $$
 ### Architecture
 
 <p align="center">
-  <img src="assets/img/a-gan-architecture.png" alt="GAN Architecture" width="80%"/>
+  <img src="../assets/img/a-gan-architecture.png" alt="GAN Architecture" width="80%"/>
 </p>
 
 > The Generator takes a noise vector $z$ and progressively upsamples
@@ -66,7 +66,7 @@ $$
 ### Generated samples — MNIST
 
 <p align="center">
-  <img src="assets/img/gan_mnist.png" alt="GAN MNIST samples" width="70%"/>
+  <img src="../assets/img/gan_mnist.png" alt="GAN MNIST samples" width="70%"/>
 </p>
 
 ### Training dynamics
@@ -107,7 +107,7 @@ $$
 ### Architecture
 
 <p align="center">
-  <img src="assets/img/a-vae-architecture.png" alt="VAE Architecture" width="80%"/>
+  <img src="../assets/img/a-vae-architecture.png" alt="VAE Architecture" width="80%"/>
 </p>
 
 > The encoder outputs parameters $(\mu, \sigma)$ of a Gaussian
@@ -117,7 +117,7 @@ $$
 ### Generated samples — MNIST
 
 <p align="center">
-  <img src="assets/img/vae_mnist.png" alt="VAE MNIST samples" width="70%"/>
+  <img src="../assets/img/vae_mnist.png" alt="VAE MNIST samples" width="70%"/>
 </p>
 
 ### Implementation highlights
