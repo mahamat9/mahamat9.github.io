@@ -406,41 +406,36 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_3/";
-            },},{id: "projects-3-project",
-          title: '3_project',
-          description: "",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/3_project/";
-            },},{id: "projects-project-4",
-          title: 'project 4',
-          description: "another without an image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/4_project/";
-            },},{id: "projects-project-5",
-          title: 'project 5',
-          description: "a project with a background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/5_project/";
-            },},{id: "projects-project-6",
-          title: 'project 6',
-          description: "a project with no image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/6_project/";
-            },},{id: "projects-project-7",
-          title: 'project 7',
-          description: "with background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/7_project/";
             },},{id: "projects-project-8",
           title: 'project 8',
           description: "an other project with a background image and giscus comments",
           section: "Projects",handler: () => {
               window.location.href = "/projects/8_project/";
-            },},{id: "projects-project-9",
-          title: 'project 9',
-          description: "another project with an image 🎉",
+            },},{id: "projects-abc-rf-approximate-bayesian-computation-via-random-forests",
+          title: 'ABC-RF — Approximate Bayesian Computation via Random Forests',
+          description: "Mathematical foundations and genomic applications of ABC-RF — Master 1 research thesis",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/9_project/";
+              window.location.href = "/projects/abcrf-thesis_project/";
+            },},{id: "projects-antenna-network-model",
+          title: 'Antenna Network Model',
+          description: "Mathematical study of signal power in antenna networks — Agrégation 2017 modeling problem",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/antenna_network_model/";
+            },},{id: "projects-real-roots-of-real-polynomials",
+          title: 'Real Roots of Real Polynomials',
+          description: "Bachelor&#39;s thesis — A necessary and sufficient condition for all roots of a real polynomial to be real",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/bachelor-thesis_project/";
+            },},{id: "projects-enron-email-investigation-app",
+          title: 'Enron Email Investigation App',
+          description: "Web application for judicial data exploration — Django, PostgreSQL, Enron dataset",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/bddr_enron_project/";
+            },},{id: "projects-bibli-electronic-library-application",
+          title: 'Bibli — Electronic Library Application',
+          description: "University project — An object-oriented library management application with web scraping and automated report generation",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/bibli_project/";
             },},{id: "projects-deep-image-processing-projects",
           title: 'Deep image processing projects',
           description: "Object detection and image segmentation",
@@ -456,6 +451,31 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/ecg_project/";
+            },},{id: "projects-generative-models-gan-amp-vae",
+          title: 'Generative Models — GAN &amp;amp; VAE',
+          description: "Implementation and experimentation of GAN and VAE architectures on MNIST and CelebA",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/generative-models_projects/";
+            },},{id: "projects-econometric-analysis-of-life-expectancy-drivers",
+          title: 'Econometric Analysis of Life Expectancy Drivers',
+          description: "Multi-method econometric analysis identifying key determinants of global life expectancy across 193 countries (2000–2015)",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/life_expectancy_project/";
+            },},{id: "projects-nlp-classification-amp-title-generation",
+          title: 'NLP — Classification &amp;amp; Title Generation',
+          description: "Fine-tuning pretrained language models for fake news detection and article title generation",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/nlp_classification_generation_project/";
+            },},{id: "projects-reinforcement-learning-dqn-amp-ppo",
+          title: 'Reinforcement Learning — DQN &amp;amp; PPO',
+          description: "Implementation of Deep Q-Network and Proximal Policy Optimization on classic control and Atari environments",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/rl_dqn_ppo_project/";
+            },},{id: "projects-estimation-in-dependent-stationary-series",
+          title: 'Estimation in Dependent Stationary Series',
+          description: "Bias and asymptotic variance of estimators (mean, variance, quantiles) under mixing conditions",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/time_series_estimation_project/";
             },},{
         id: 'social-email',
         title: 'email',
