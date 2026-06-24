@@ -43,12 +43,12 @@ $$\|s(y^{(i)}) - s(y_\text{obs})\| \leq \varepsilon.$$
 
 ### From ABC to ABC-RF
 
-| Step | Classic ABC | ABC-RF |
-|---|---|---|
-| Model selection | Rejection + ratio | Random Forest classifier |
-| Parameter estimation | Weighted quantiles | RF regression + local weights |
-| Tolerance $\varepsilon$ | Required | Not needed |
-| Reference table | Discarded | Full table used |
+| Step                    | Classic ABC        | ABC-RF                        |
+| ----------------------- | ------------------ | ----------------------------- |
+| Model selection         | Rejection + ratio  | Random Forest classifier      |
+| Parameter estimation    | Weighted quantiles | RF regression + local weights |
+| Tolerance $\varepsilon$ | Required           | Not needed                    |
+| Reference table         | Discarded          | Full table used               |
 
 The RF is trained on a **reference table**
 $$\mathcal{T} = \{(m^{(i)},\, s(y^{(i)}))\}_{i=1}^{N}$$
@@ -69,14 +69,14 @@ We replicated the **human demographic scenario selection** benchmark from the fo
 
 ### 2 - Asian rice evolutionary history
 
-Using **phylogenetic networks** and genomic data from *Oryza sativa* subspecies:
+Using **phylogenetic networks** and genomic data from _Oryza sativa_ subspecies:
 
-| Task | Method |
-|---|---|
-| Scenario encoding | Summary statistics on allele frequency spectra |
-| Model selection | `abcrf::abcrf()` |
-| Posterior estimation | `abcrf::postpr()` |
-| Network visualisation | Phylogenetic network reconstruction |
+| Task                  | Method                                         |
+| --------------------- | ---------------------------------------------- |
+| Scenario encoding     | Summary statistics on allele frequency spectra |
+| Model selection       | `abcrf::abcrf()`                               |
+| Posterior estimation  | `abcrf::postpr()`                              |
+| Network visualisation | Phylogenetic network reconstruction            |
 
 ---
 
@@ -92,10 +92,10 @@ This work emphasizes **reproducible research**:
 
 ## Key References
 
-- Pudlo, P. et al. (2015). *Reliable ABC model choice via random forests.*
+- Pudlo, P. et al. (2015). _Reliable ABC model choice via random forests._
   **Bioinformatics**, 32(6), 859–866.
-- Raynal, L. et al. (2019). *ABC random forests for Bayesian parameter
-  inference.* **Bioinformatics**, 35(10), 1720–1728.
+- Raynal, L. et al. (2019). _ABC random forests for Bayesian parameter
+  inference._ **Bioinformatics**, 35(10), 1720–1728.
 
 ---
 

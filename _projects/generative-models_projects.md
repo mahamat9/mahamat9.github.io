@@ -10,9 +10,9 @@ github: https://github.com/mahamat9/Generative-Models
 
 ## Overview
 
-**Type:** Practical coursework — *S. Lamprier*  
+**Type:** Practical coursework — _S. Lamprier_  
 **Stack:** Python · PyTorch · NumPy · Matplotlib
-Duration: November 2024 – December 2024  
+Duration: November 2024 – December 2024
 
 ---
 
@@ -33,10 +33,10 @@ Both approaches are trained on standard benchmarks (**MNIST**, **CelebA**) and e
 
 A GAN frames generation as a **two-player minimax game** between:
 
-| Network | Role | Objective |
-|---|---|---|
-| Generator $G$ | Maps noise $z \sim p_z$ to data space | Fool $D$ |
-| Discriminator $D$ | Classifies real vs. generated | Detect fakes |
+| Network           | Role                                  | Objective    |
+| ----------------- | ------------------------------------- | ------------ |
+| Generator $G$     | Maps noise $z \sim p_z$ to data space | Fool $D$     |
+| Discriminator $D$ | Classifies real vs. generated         | Detect fakes |
 
 The training objective is:
 
@@ -59,8 +59,8 @@ $$
 
 ### Variant explored
 
-| Variant | Key idea |
-|---|---|
+| Variant   | Key idea                                               |
+| --------- | ------------------------------------------------------ |
 | **DCGAN** | Convolutional layers, batch norm, more stable training |
 
 ### Generated samples — MNIST
@@ -98,11 +98,11 @@ $$
 - D_\text{KL}\!\left(q_\phi(z \mid x) \;\|\; p(z)\right)
 $$
 
-| Term | Role |
-|---|---|
-| Reconstruction term | Forces the decoder to recover $x$ |
-| KL divergence | Regularises the latent space toward $\mathcal{N}(0, I)$ |
-| Reparametrisation trick | Enables backprop through sampling |
+| Term                    | Role                                                    |
+| ----------------------- | ------------------------------------------------------- |
+| Reconstruction term     | Forces the decoder to recover $x$                       |
+| KL divergence           | Regularises the latent space toward $\mathcal{N}(0, I)$ |
+| Reparametrisation trick | Enables backprop through sampling                       |
 
 ### Architecture
 
@@ -131,13 +131,13 @@ $$
 
 ## GAN vs. VAE — Comparison
 
-| Property | GAN | VAE |
-|---|---|---|
-| Sample sharpness | High | Blurry |
-| Training stability | Unstable | Stable |
-| Latent structure | No explicit space | Structured |
-| Likelihood estimate | Implicit | Via ELBO |
-| Mode coverage | Mode collapse risk | Better coverage |
+| Property            | GAN                | VAE             |
+| ------------------- | ------------------ | --------------- |
+| Sample sharpness    | High               | Blurry          |
+| Training stability  | Unstable           | Stable          |
+| Latent structure    | No explicit space  | Structured      |
+| Likelihood estimate | Implicit           | Via ELBO        |
+| Mode coverage       | Mode collapse risk | Better coverage |
 
 ---
 

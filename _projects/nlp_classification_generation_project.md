@@ -20,10 +20,10 @@ github: https://github.com/mahamat9/Intro-NLP
 
 Two complementary NLP tasks exploring both **supervised classification** and **generative** capabilities of modern language models.
 
-| Task | Model | Dataset | Metric |
-|---|---|---|---|
-| **Fake News Classification** | Custom CNN + Word2Vec | ~45k articles (Kaggle) | Accuracy, F1 |
-| **Title Generation** | T5-small (fine-tuned) | TitleGen (Kaggle) | ROUGE-1, ROUGE-2 |
+| Task                         | Model                 | Dataset                | Metric           |
+| ---------------------------- | --------------------- | ---------------------- | ---------------- |
+| **Fake News Classification** | Custom CNN + Word2Vec | ~45k articles (Kaggle) | Accuracy, F1     |
+| **Title Generation**         | T5-small (fine-tuned) | TitleGen (Kaggle)      | ROUGE-1, ROUGE-2 |
 
 Both were carried out as part of the Batcouzé I. conference-workshop, February 2025.
 
@@ -32,6 +32,7 @@ Both were carried out as part of the Batcouzé I. conference-workshop, February 
 ## Part I — Fake News Classification
 
 ### Dataset
+
 **~45,000 articles** labeled `FAKE` / `REAL` from [Kaggle Fake News Dataset](https://www.kaggle.com/datasets/ruudseven/fake-news-detection/data).
 
 ### Pipeline
@@ -72,20 +73,22 @@ class CNNClassifier(nn.Module):
         x = F.adaptive_max_pool1d(x, 1).squeeze(-1)    # (B, 256)
         return self.fc(x)
 ```
+
 </details>
 
 ### Training Configuration
 
-| Hyperparameter | Value |
-|---|---|
-| Optimizer | Adam |
-| Learning Rate | `1e-3` |
-| Batch Size | `64` |
-| Epochs | `15` |
-| Early Stopping | Patience = `6` epochs |
-| Max Token Length | `256` tokens |
+| Hyperparameter   | Value                 |
+| ---------------- | --------------------- |
+| Optimizer        | Adam                  |
+| Learning Rate    | `1e-3`                |
+| Batch Size       | `64`                  |
+| Epochs           | `15`                  |
+| Early Stopping   | Patience = `6` epochs |
+| Max Token Length | `256` tokens          |
 
 ### Visualizations
+
 - Training / Validation loss curves
 - Confusion matrix
 - Per-class precision / recall / F1 bar chart
@@ -96,6 +99,7 @@ class CNNClassifier(nn.Module):
 ## Part II — Title Generation with T5
 
 ### Dataset
+
 **~7,000 article-title pairs** — titles used as ground-truth targets for generation.
 
 ### Model
@@ -106,6 +110,7 @@ T5 adopts a **text-to-text** paradigm: both inputs and outputs are raw text stri
 Input:  "Generate a title: The article body text here..."
 Output: "Predicted Article Title"
 ```
+
 ```
 Input: "Generate a title: <article text>"
          |
@@ -120,23 +125,23 @@ Input: "Generate a title: <article text>"
 Output: "<generated title>"
 ```
 
-| Property | Value |
-|---|---|
-| Architecture | T5-small encoder-decoder |
-| Parameters | ~60M |
-| Pre-trained | `google/t5-small` (HuggingFace) |
-| Special Prefix | `"Generate a title: "` |
+| Property       | Value                           |
+| -------------- | ------------------------------- |
+| Architecture   | T5-small encoder-decoder        |
+| Parameters     | ~60M                            |
+| Pre-trained    | `google/t5-small` (HuggingFace) |
+| Special Prefix | `"Generate a title: "`          |
 
 ### Training Configuration
 
-| Hyperparameter | Value |
-|---|---|
-| Optimizer | Adam |
-| Epochs | `15` |
-| Learning Rate | `1e-4` |
-| Batch Size | `4` |
-| Beam Size | `4` |
-| Repetition Penalty | `2.5` |
+| Hyperparameter     | Value  |
+| ------------------ | ------ |
+| Optimizer          | Adam   |
+| Epochs             | `15`   |
+| Learning Rate      | `1e-4` |
+| Batch Size         | `4`    |
+| Beam Size          | `4`    |
+| Repetition Penalty | `2.5`  |
 
 ### Deployment
 
@@ -146,25 +151,25 @@ Model on HuggingFace Hub: [Ivanhoe9/finetune_T5_small_title_generation_NLP_cours
 
 ## Results Summary
 
-| Task | Accuracy | F1 | ROUGE-1 | ROUGE-2 |
-|---|---|---|---|---|
-| Fake News Classification | **0.92** | **0.91** | — | — |
-| Title Generation (T5-small) | — | — | **0.42** | **0.18** |
+| Task                        | Accuracy | F1       | ROUGE-1  | ROUGE-2  |
+| --------------------------- | -------- | -------- | -------- | -------- |
+| Fake News Classification    | **0.92** | **0.91** | —        | —        |
+| Title Generation (T5-small) | —        | —        | **0.42** | **0.18** |
 
 ---
 
 ## Tools & Stack
 
-| Tool | Role |
-|---|---|
-| **PyTorch** | Model implementation & training |
-| **HuggingFace Transformers** | T5-small, tokenizers, trainer |
-| **Gensim** | Word2Vec skip-gram pretraining |
-| **tokenizers** | Custom BPE tokenizer (from scratch) |
-| **TensorBoard** | Training metrics visualization |
-| **pandas / NumPy** | Data loading & preprocessing |
-| **scikit-learn** | Metrics (F1, confusion matrix), PCA |
-| **matplotlib / seaborn** | Plots |
+| Tool                         | Role                                |
+| ---------------------------- | ----------------------------------- |
+| **PyTorch**                  | Model implementation & training     |
+| **HuggingFace Transformers** | T5-small, tokenizers, trainer       |
+| **Gensim**                   | Word2Vec skip-gram pretraining      |
+| **tokenizers**               | Custom BPE tokenizer (from scratch) |
+| **TensorBoard**              | Training metrics visualization      |
+| **pandas / NumPy**           | Data loading & preprocessing        |
+| **scikit-learn**             | Metrics (F1, confusion matrix), PCA |
+| **matplotlib / seaborn**     | Plots                               |
 
 ---
 

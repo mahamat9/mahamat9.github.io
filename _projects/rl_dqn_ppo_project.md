@@ -10,9 +10,9 @@ github: https://github.com/mahamat9/RL-DQN-PPO
 
 ## Overview
 
-**Type:** Practical coursework — *S. Lamprier*  
+**Type:** Practical coursework — _S. Lamprier_  
 **Stack:** Python · PyTorch · Gymnasium · NumPy · Matplotlib
-Duration: November 2024 – December 2024  
+Duration: November 2024 – December 2024
 
 ---
 
@@ -22,10 +22,10 @@ Reinforcement Learning (RL) is a paradigm where an **agent** learns to make deci
 
 This project implements two deep RL algorithms:
 
-| Algorithm | Type | Category |
-|---|---|---|
-| **DQN** | Value-based | Off-policy |
-| **PPO** | Policy-based | On-policy |
+| Algorithm | Type         | Category   |
+| --------- | ------------ | ---------- |
+| **DQN**   | Value-based  | Off-policy |
+| **PPO**   | Policy-based | On-policy  |
 
 ---
 
@@ -110,19 +110,19 @@ argmax_a Q(s, a)     <- greedy policy pi(s)
 
 ### Variants
 
-| Variant | Innovation | Benefit |
-|---|---|---|
-| **Prioritized Replay** (Schaul et al., 2016) | Sample by TD-error magnitude | Faster convergence |
-| **Double DQN** (van Hasselt et al., 2015) | Decouple selection and evaluation | Reduces overestimation |
-| **Dueling DQN** (Wang et al., 2016) | Decompose $Q(s,a) = V(s) + A(s,a)$ | Better generalization |
+| Variant                                      | Innovation                         | Benefit                |
+| -------------------------------------------- | ---------------------------------- | ---------------------- |
+| **Prioritized Replay** (Schaul et al., 2016) | Sample by TD-error magnitude       | Faster convergence     |
+| **Double DQN** (van Hasselt et al., 2015)    | Decouple selection and evaluation  | Reduces overestimation |
+| **Dueling DQN** (Wang et al., 2016)          | Decompose $Q(s,a) = V(s) + A(s,a)$ | Better generalization  |
 
 ### Environments Tested
 
-| Environment | Domain | Complexity |
-|---|---|---|
-| **GridWorld** | Tabular / discrete | Low (custom grid) |
-| **CartPole** | Classic control | Low (4D state) |
-| **LunarLander** | Classic control | Medium |
+| Environment     | Domain             | Complexity        |
+| --------------- | ------------------ | ----------------- |
+| **GridWorld**   | Tabular / discrete | Low (custom grid) |
+| **CartPole**    | Classic control    | Low (4D state)    |
+| **LunarLander** | Classic control    | Medium            |
 
 ---
 
@@ -165,30 +165,30 @@ where $\delta_t = r_t + \gamma V(s_{t+1}) - V(s_t)$.
 
 ### Variants
 
-| Variant | Innovation | Benefit |
-|---|---|---|
-| PPO-Clip | Base clipped surrogate objective | Stable, reliable |
+| Variant                    | Innovation                                 | Benefit            |
+| -------------------------- | ------------------------------------------ | ------------------ |
+| PPO-Clip                   | Base clipped surrogate objective           | Stable, reliable   |
 | **PPO with Entropy Bonus** | Add $c \cdot H(\pi_\theta(\cdot \vert s))$ | Better exploration |
 
 ### Environments Tested
 
-| Environment | Domain | Actor-Critic Suitable |
-|---|---|---|
-| **GridWorld** | Tabular / discrete | Yes (discrete actions) |
-| **CartPole-v1** | Classic control | Yes |
-| **LunarLander-v3** | Classic control | Yes |
+| Environment        | Domain             | Actor-Critic Suitable  |
+| ------------------ | ------------------ | ---------------------- |
+| **GridWorld**      | Tabular / discrete | Yes (discrete actions) |
+| **CartPole-v1**    | Classic control    | Yes                    |
+| **LunarLander-v3** | Classic control    | Yes                    |
 
 ---
 
 ## Tools and Stack
 
-| Tool | Role |
-|---|---|
-| **Python 3.10+** | Language |
+| Tool             | Role                          |
+| ---------------- | ----------------------------- |
+| **Python 3.10+** | Language                      |
 | **PyTorch 2.0+** | Neural networks, GPU training |
-| **Gymnasium** | Environment interfaces |
-| **NumPy** | Numerical operations |
-| **Matplotlib** | Training curves, reward plots |
+| **Gymnasium**    | Environment interfaces        |
+| **NumPy**        | Numerical operations          |
+| **Matplotlib**   | Training curves, reward plots |
 
 ---
 

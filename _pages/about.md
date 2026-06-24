@@ -36,13 +36,13 @@ I hold an MSc in Applied Mathematics (Data Science) from the University of Anger
 My academic and research journey has been shaped by collaborations with leading experts:
 
 - **Image Processing & Computer Vision**
-Supervised by [Pr. David Rousseau](https://eng-irhs.angers-nantes.hub.inrae.fr/research/imaging-for-horticulture-and-phenotyping/l-equipe/david-rousseau), I developed expertise in image processing in my 2nd year of MSc.
+  Supervised by [Pr. David Rousseau](https://eng-irhs.angers-nantes.hub.inrae.fr/research/imaging-for-horticulture-and-phenotyping/l-equipe/david-rousseau), I developed expertise in image processing in my 2nd year of MSc.
 
 - **Generative Models & NLP**
-Under the guidance of [Dr. Sylvain Lamprier](https://scholar.google.com/citations?user=NuGN8SUAAAAJ&hl=en), I explored generative adversarial networks (GAN), variational autoencoders (VAE), and NLP for text classification and generation, until in my 2nd year of MSc.
+  Under the guidance of [Dr. Sylvain Lamprier](https://scholar.google.com/citations?user=NuGN8SUAAAAJ&hl=en), I explored generative adversarial networks (GAN), variational autoencoders (VAE), and NLP for text classification and generation, until in my 2nd year of MSc.
 
 - **Audio Signal Processing**
-During an internship with [Dr. Axel Marmoret](https://ax-le.github.io/) and [Dr. Dorian Cazau](https://labsticc.fr/fr/annuaire/cazau-dorian), I worked on NMF for sound event detection and source separation.
+  During an internship with [Dr. Axel Marmoret](https://ax-le.github.io/) and [Dr. Dorian Cazau](https://labsticc.fr/fr/annuaire/cazau-dorian), I worked on NMF for sound event detection and source separation.
 
 #### Key Projects
 
@@ -58,7 +58,7 @@ Built and deployed a web application (Django, SQL) for visualizing and exploring
 
 Developed projects in [GAN, VAE](https://github.com/mahamat9/Generative-Models), and NLP, with a focus on generative models and audio signal processing—applying mathematical rigor to innovative AI solutions.
 
-------
+---
 
 **Looking ahead**
 

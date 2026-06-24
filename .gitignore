@@ -11,3 +11,6 @@ assets/libs/
 node_modules/
 vendor
 .idea
+
+assets/json/resume_project.json
+assets/html/bibli_graph_illustration.html

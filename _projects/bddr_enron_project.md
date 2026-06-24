@@ -28,10 +28,10 @@ This project builds a **web application** allowing investigators — with no req
 
 ### Source data
 
-| Source | Format | Content |
-|---|---|---|
+| Source       | Format       | Content                 |
+| ------------ | ------------ | ----------------------- |
 | Email corpus | Maildir tree | ~500k raw `.txt` emails |
-| Metadata | XML file | Employee attributes |
+| Metadata     | XML file     | Employee attributes     |
 
 ### Relational schema
 
@@ -60,21 +60,22 @@ The database is populated entirely via Python scripts:
 
 Selected queries are listed below.
 
-| Query | Description |
-|---|---|
-| Employee lookup | Retrieve all attributes of an employee by name / email |
-| Timeline analysis | All emails exchanged over a given time interval |
-| Contact network | List all employees who communicated with a given person |
-| Top senders | Rank employees by volume of sent emails |
-| Keyword search | Full-text search across subjects and bodies |
-| Thread reconstruction | Retrieve a full email thread from a message ID |
+| Query                 | Description                                             |
+| --------------------- | ------------------------------------------------------- |
+| Employee lookup       | Retrieve all attributes of an employee by name / email  |
+| Timeline analysis     | All emails exchanged over a given time interval         |
+| Contact network       | List all employees who communicated with a given person |
+| Top senders           | Rank employees by volume of sent emails                 |
+| Keyword search        | Full-text search across subjects and bodies             |
+| Thread reconstruction | Retrieve a full email thread from a message ID          |
 
 ---
+
 ## Tools & Stack
 
-- **Backend*: Django, Python 3.11
+- \*_Backend_: Django, Python 3.11
 - **Database**: PostgreSQL, psycopg2
-- **Data parsing**: Python *email*, *xml.etree.ElementTree*
+- **Data parsing**: Python _email_, _xml.etree.ElementTree_
 - **Frontend**: Django templates, HTML, CSS
 - **Version control**: Git / GitHub
 
