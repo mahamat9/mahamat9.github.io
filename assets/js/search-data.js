@@ -16,13 +16,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/projects/";
           },
-        },{id: "nav-repositories",
-          title: "Repositories",
-          description: "A showcase of my open-source projects and research code.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/repositories/";
-          },
         },{id: "nav-my-curriculum-vitæ",
           title: "My Curriculum vitæ",
           description: "More details in my full Resume",
@@ -389,9 +382,9 @@ ninja.data = [{
           description: "an other project with a background image and giscus comments",
           section: "Projects",handler: () => {
               window.location.href = "/projects/8_project/";
-            },},{id: "projects-abc-rf-approximate-bayesian-computation-via-random-forests",
-          title: 'ABC-RF — Approximate Bayesian Computation via Random Forests',
-          description: "Mathematical foundations and genomic applications of ABC-RF — Master 1 research thesis",
+            },},{id: "projects-",
+          title: '',
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/abcrf-thesis_project/";
             },},{id: "projects-antenna-network-model",
@@ -401,12 +394,12 @@ ninja.data = [{
               window.location.href = "/projects/antenna_network_model/";
             },},{id: "projects-real-roots-of-real-polynomials",
           title: 'Real Roots of Real Polynomials',
-          description: "Bachelor&#39;s thesis — A necessary and sufficient condition for all roots of a real polynomial to be real",
+          description: "Bachelor&#39;s thesis on A necessary and sufficient condition for all roots of a real polynomial to be real",
           section: "Projects",handler: () => {
               window.location.href = "/projects/bachelor-thesis_project/";
             },},{id: "projects-enron-email-investigation-app",
           title: 'Enron Email Investigation App',
-          description: "Web application for judicial data exploration — Django, PostgreSQL, Enron dataset",
+          description: "Relational Database and Web application for judicial data exploration",
           section: "Projects",handler: () => {
               window.location.href = "/projects/bddr_enron_project/";
             },},{id: "projects-bibli-electronic-library-application",
@@ -439,13 +432,18 @@ ninja.data = [{
           description: "Multi-method econometric analysis identifying key determinants of global life expectancy across 193 countries (2000–2015)",
           section: "Projects",handler: () => {
               window.location.href = "/projects/life_expectancy_project/";
-            },},{id: "projects-nlp-classification-amp-title-generation",
-          title: 'NLP — Classification &amp;amp; Title Generation',
-          description: "Fine-tuning pretrained language models for fake news detection and article title generation",
+            },},{id: "projects-nlp-classification-amp-generation",
+          title: 'NLP — Classification &amp;amp; Generation',
+          description: "Training from scratch and Fine-tuning pretrained language models for fake news detection and article title generation",
           section: "Projects",handler: () => {
               window.location.href = "/projects/nlp_classification_generation_project/";
-            },},{id: "projects-reinforcement-learning-dqn-amp-ppo",
-          title: 'Reinforcement Learning — DQN &amp;amp; PPO',
+            },},{id: "projects-molecule-protein-inhibition-prediction",
+          title: 'Molecule–Protein Inhibition Prediction',
+          description: "Data challenge — predicting protein inhibition by small molecules for drug discovery",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/prot_inhib_project/";
+            },},{id: "projects-reinforcement-learning",
+          title: 'Reinforcement Learning',
           description: "Implementation of Deep Q-Network and Proximal Policy Optimization on classic control and Atari environments",
           section: "Projects",handler: () => {
               window.location.href = "/projects/rl_dqn_ppo_project/";
