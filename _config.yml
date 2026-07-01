@@ -222,6 +222,7 @@ kramdown:
 # Includes & excludes
 include: ["_pages", "_scripts"]
 exclude:
+  - _pages/repositories.md # exclude repositories page from build
   - _pages/blog.md # exclude blog page from build
   #- _pages/projects.md # exclude projects page from build
 

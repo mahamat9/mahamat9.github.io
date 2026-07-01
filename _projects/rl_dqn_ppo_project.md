@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Reinforcement Learning — DQN & PPO
+title: Reinforcement Learning
 description: Implementation of Deep Q-Network and Proximal Policy Optimization on classic control and Atari environments
 img: assets/img/q-learning-rl.png
 importance: 5
@@ -8,30 +8,49 @@ category: academic
 github: https://github.com/mahamat9/RL-DQN-PPO
 ---
 
+<style>
+  h2, h3 { text-align: center; margin-top: 2rem; margin-bottom: 2rem; }
+</style>
+
 ## Overview
 
-**Type:** Practical coursework — _S. Lamprier_  
-**Stack:** Python · PyTorch · Gymnasium · NumPy · Matplotlib
-Duration: November 2024 – December 2024
+**Type:** Practical coursework of *S. Lamprier*  
+**Author:** <u>M. Mahamat</u>  
+**Duration:** November 2024 – December 2024
 
 ---
 
 ## Context
 
-Reinforcement Learning (RL) is a paradigm where an **agent** learns to make decisions by interacting with an **environment**. The agent observes the state $s_t$, selects an action $a_t$, receives a scalar reward $r_t$, and transitions to a new state $s_{t+1}$. The agent's goal is to learn a **policy** $\pi(a|s)$ that maximizes the expected cumulative return.
+Reinforcement Learning (RL) is a learning paradigm where an **agent** learns to make decisions by interacting with an **environment**. The agent observes state $s_t$, selects action $a_t$, receives reward $r_t$, and transitions to $s_{t+1}$. The goal: learn a **policy** $\pi(a\|s)$ that maximizes expected cumulative return.
 
-This project implements two deep RL algorithms:
+This project implements two foundational deep RL algorithms and evaluates them on classic control tasks:
 
-| Algorithm | Type         | Category   |
-| --------- | ------------ | ---------- |
-| **DQN**   | Value-based  | Off-policy |
-| **PPO**   | Policy-based | On-policy  |
+<table style="width:100%; border-collapse:collapse; font-size:0.95rem; margin:1rem 0;">
+  <thead>
+    <tr style="background-color:#5b5b5b;">
+      <th style="border:1px solid #ccc; padding:10px 14px;">Algorithm</th>
+      <th style="border:1px solid #ccc; padding:10px 14px;">Type</th>
+      <th style="border:1px solid #ccc; padding:10px 14px;">Policy Update</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border:1px solid #ccc; padding:10px 14px;"><strong>DQN</strong></td>
+      <td style="border:1px solid #ccc; padding:10px 14px;">Value-based</td>
+      <td style="border:1px solid #ccc; padding:10px 14px;">Off-policy</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ccc; padding:10px 14px;"><strong>PPO</strong></td>
+      <td style="border:1px solid #ccc; padding:10px 14px;">Policy-based</td>
+      <td style="border:1px solid #ccc; padding:10px 14px;">On-policy</td>
+    </tr>
+  </tbody>
+</table>
 
----
-
-<p align="center">
-  <img src="https://gymnasium.farama.org/_images/cart_pole.gif" width="30%"/>
-  <img src="https://gymnasium.farama.org/_images/lunar_lander.gif" width="30%"/>
+<p align="center" style="margin:1.5rem 0;">
+  <img src="https://gymnasium.farama.org/_images/cart_pole.gif" width="35%" style="margin-right:3%;" alt="CartPole"/>
+  <img src="https://gymnasium.farama.org/_images/lunar_lander.gif" width="35%;" alt="LunarLander"/>
 </p>
 
 ---
@@ -40,11 +59,11 @@ This project implements two deep RL algorithms:
 
 ### Markov Decision Process (MDP)
 
-An RL problem is formally defined as an MDP — a 4-tuple $(\mathcal{S}, \mathcal{A}, \mathcal{P}, \mathcal{R})$:
+An RL problem is formally defined as an MDP, a 4-tuple $(\mathcal{S}, \mathcal{A}, \mathcal{P}, \mathcal{R})$:
 
 - $\mathcal{S}$: state space
 - $\mathcal{A}$: action space
-- $\mathcal{P}(s'|s,a)$: transition dynamics
+- $\mathcal{P}(s'\|s,a)$: transition dynamics
 - $\mathcal{R}(s,a,s')$: reward function
 
 The agent's goal is to maximize the **expected return**:
@@ -78,7 +97,7 @@ DQN approximates the Q-function using a deep neural network. Instead of learning
 - **Experience Replay**: Store transitions $(s,a,r,s')$ in a replay buffer and sample uniformly at each update, breaking temporal correlation.
 - **Target Network**: A separate network with frozen weights provides stable targets, reducing divergence during training.
 
-### Key Equations
+### Main Equations
 
 The Q-learning update rule is:
 
@@ -92,37 +111,50 @@ where $\theta^-$ are the weights of the **target network** (updated periodically
 
 ### Architecture
 
-```
-Input: state s in R^n
-  |
-  v
-Dense(256) -> ReLU
-  |
-  v
-Dense(256) -> ReLU
-  |
-  v
-Dense(|A|)           <- Q(s, a) for all actions
-  |
-  v
-argmax_a Q(s, a)     <- greedy policy pi(s)
-```
+$$
+
+\begin{array}{c}
+\boxed{\text{Input: } s \in \mathbb{R}^n} \\
+\downarrow \\
+\boxed{\text{Dense}(256) \to \text{ReLU}} \\
+\downarrow \\
+\boxed{\text{Dense}(256) \to \text{ReLU}} \\
+\downarrow \\
+\boxed{Q_\theta(s, a) \in \mathbb{R}^{|\mathcal{A}|}} \quad \text{(Q-values for all actions)} \\
+\downarrow \\
+\boxed{\pi(s) = \arg\max_a Q_\theta(s, a)} \quad \text{(greedy policy)}
+\end{array}
+
+$$
 
 ### Variants
 
-| Variant                                      | Innovation                         | Benefit                |
-| -------------------------------------------- | ---------------------------------- | ---------------------- |
-| **Prioritized Replay** (Schaul et al., 2016) | Sample by TD-error magnitude       | Faster convergence     |
-| **Double DQN** (van Hasselt et al., 2015)    | Decouple selection and evaluation  | Reduces overestimation |
-| **Dueling DQN** (Wang et al., 2016)          | Decompose $Q(s,a) = V(s) + A(s,a)$ | Better generalization  |
-
-### Environments Tested
-
-| Environment     | Domain             | Complexity        |
-| --------------- | ------------------ | ----------------- |
-| **GridWorld**   | Tabular / discrete | Low (custom grid) |
-| **CartPole**    | Classic control    | Low (4D state)    |
-| **LunarLander** | Classic control    | Medium            |
+<table style="width:100%; border-collapse:collapse; font-size:0.95rem;">
+  <thead>
+    <tr style="background-color:#5b5b5b;">
+      <th style="border:1px solid #ccc; padding:10px 14px;">Variant</th>
+      <th style="border:1px solid #ccc; padding:10px 14px;">Innovation</th>
+      <th style="border:1px solid #ccc; padding:10px 14px;">Benefit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border:1px solid #ccc; padding:10px 14px;">Prioritized Replay</td>
+      <td style="border:1px solid #ccc; padding:10px 14px;">Sample by TD-error magnitude</td>
+      <td style="border:1px solid #ccc; padding:10px 14px;">Faster convergence</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ccc; padding:10px 14px;">Double DQN</td>
+      <td style="border:1px solid #ccc; padding:10px 14px;">Decouple action selection & evaluation</td>
+      <td style="border:1px solid #ccc; padding:10px 14px;">Reduce overestimation</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ccc; padding:10px 14px;">Dueling DQN</td>
+      <td style="border:1px solid #ccc; padding:10px 14px;">Decompose $Q(s,a) = V(s) + A(s,a)$</td>
+      <td style="border:1px solid #ccc; padding:10px 14px;">Better generalization</td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
@@ -146,52 +178,123 @@ The clip operation prevents overly large policy changes, stabilizing training.
 
 ### Actor-Critic Architecture
 
-```
-         +---------------------+
-state s ->|   Shared Encoder    |-> shared features
-         |  (optional: Conv)   |
-         +---------+-----------+
-                   |       |
-                   v       v
-              Actor head   Critic head
-              pi(a|s)      V(s)
-```
+$$
+
+\begin{array}{c}
+\boxed{\text{state } s \in \mathbb{R}^n} \\
+\downarrow \\
+\boxed{\begin{array}{c}\text{Shared Encoder} \\ \text{(Conv / Dense)}\end{array}} \\
+\downarrow \\
+\boxed{\phi(s)} \\
+\downarrow\quad\downarrow \\
+\begin{array}{cc}
+\boxed{\pi_\theta(a|s)} & \boxed{V_\theta(s)} \\
+\text{Actor head} & \text{Critic head}
+\end{array}
+\end{array}
+
+$$
 
 The **advantage estimator** $\hat{A}_t$ is computed via GAE (Generalized Advantage Estimation):
 
 $$\hat{A}_t^{\text{GAE}(\lambda)} = \sum_{l=0}^{T-t-1} (\gamma\lambda)^l \delta_{t+l}$$
 
-where $\delta_t = r_t + \gamma V(s_{t+1}) - V(s_t)$.
+where $\delta_t = r_t + \gamma V(s_{t+1}) - V(s_t).$
 
 ### Variants
 
-| Variant                    | Innovation                                 | Benefit            |
-| -------------------------- | ------------------------------------------ | ------------------ |
-| PPO-Clip                   | Base clipped surrogate objective           | Stable, reliable   |
-| **PPO with Entropy Bonus** | Add $c \cdot H(\pi_\theta(\cdot \vert s))$ | Better exploration |
-
-### Environments Tested
-
-| Environment        | Domain             | Actor-Critic Suitable  |
-| ------------------ | ------------------ | ---------------------- |
-| **GridWorld**      | Tabular / discrete | Yes (discrete actions) |
-| **CartPole-v1**    | Classic control    | Yes                    |
-| **LunarLander-v3** | Classic control    | Yes                    |
-
----
-
-## Tools and Stack
-
-| Tool             | Role                          |
-| ---------------- | ----------------------------- |
-| **Python 3.10+** | Language                      |
-| **PyTorch 2.0+** | Neural networks, GPU training |
-| **Gymnasium**    | Environment interfaces        |
-| **NumPy**        | Numerical operations          |
-| **Matplotlib**   | Training curves, reward plots |
+<table style="width:100%; border-collapse:collapse; font-size:0.95rem;">
+  <thead>
+    <tr style="background-color:#5b5b5b;">
+      <th style="border:1px solid #ccc; padding:10px 14px;">Variant</th>
+      <th style="border:1px solid #ccc; padding:10px 14px;">Modification</th>
+      <th style="border:1px solid #ccc; padding:10px 14px;">Effect</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border:1px solid #ccc; padding:10px 14px;">PPO-Clip (base)</td>
+      <td style="border:1px solid #ccc; padding:10px 14px;">Clipped surrogate objective</td>
+      <td style="border:1px solid #ccc; padding:10px 14px;">Stable, reliable training</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ccc; padding:10px 14px;">PPO + Entropy</td>
+      <td style="border:1px solid #ccc; padding:10px 14px;">Add $c \cdot H(\pi_\theta)$ term</td>
+      <td style="border:1px solid #ccc; padding:10px 14px;">Encourage exploration</td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
-<div style="display: flex; gap: 10px; justify-content: center; margin-top: 40px;">
-  <a href="https://github.com/mahamat9/RL-DQN-PPO" style="padding: 10px 24px; background: #2c3e50; color: white; text-decoration: none; border-radius: 6px; font-size: 14px; font-weight: 600;">View on GitHub</a>
+## Environments Tested
+
+<table style="width:100%; border-collapse:collapse; font-size:0.95rem;">
+  <thead>
+    <tr style="background-color:#5b5b5b;">
+      <th style="border:1px solid #ccc; padding:10px 14px;">Environment</th>
+      <th style="border:1px solid #ccc; padding:10px 14px;">Domain</th>
+      <th style="border:1px solid #ccc; padding:10px 14px;">DQN</th>
+      <th style="border:1px solid #ccc; padding:10px 14px;">PPO</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border:1px solid #ccc; padding:10px 14px;"><strong>GridWorld</strong></td>
+      <td style="border:1px solid #ccc; padding:10px 14px;">Discrete / tabular</td>
+      <td style="border:1px solid #ccc; padding:10px 14px;">✓</td>
+      <td style="border:1px solid #ccc; padding:10px 14px;">✓</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ccc; padding:10px 14px;"><strong>CartPole-v1</strong></td>
+      <td style="border:1px solid #ccc; padding:10px 14px;">Classic control (4D)</td>
+      <td style="border:1px solid #ccc; padding:10px 14px;">✓</td>
+      <td style="border:1px solid #ccc; padding:10px 14px;">✓</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ccc; padding:10px 14px;"><strong>LunarLander-v3</strong></td>
+      <td style="border:1px solid #ccc; padding:10px 14px;">Classic control (8D)</td>
+      <td style="border:1px solid #ccc; padding:10px 14px;">✓</td>
+      <td style="border:1px solid #ccc; padding:10px 14px;">✓</td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
+## Stack
+
+<table style="width:100%; border-collapse:collapse; font-size:0.95rem;">
+  <thead>
+    <tr style="background-color:#5b5b5b;">
+      <th style="border:1px solid #ccc; padding:10px 14px;">Component</th>
+      <th style="border:1px solid #ccc; padding:10px 14px;">Technology</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border:1px solid #ccc; padding:10px 14px;">Language</td>
+      <td style="border:1px solid #ccc; padding:10px 14px;">Python 3.10+</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ccc; padding:10px 14px;">Deep Learning</td>
+      <td style="border:1px solid #ccc; padding:10px 14px;">PyTorch 2.0+</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ccc; padding:10px 14px;">RL Environments</td>
+      <td style="border:1px solid #ccc; padding:10px 14px;">Gymnasium</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ccc; padding:10px 14px;">Numerics & plots</td>
+      <td style="border:1px solid #ccc; padding:10px 14px;">NumPy · Matplotlib</td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
+<div style="text-align: center; margin: 2.5rem 0; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+  <a href="{{ page.github }}" class="btn btn-primary" role="button" target="_blank">
+    <i class="fab fa-github"></i> More details on GitHub
+  </a>
 </div>

@@ -8,11 +8,15 @@ category: academic
 github: https://github.com/mahamat9/Generative-Models
 ---
 
+<style>
+  h2, h3 { text-align: center; margin-top: 2rem; margin-bottom: 2rem; }
+</style>
+
 ## Overview
 
-**Type:** Practical coursework — _S. Lamprier_  
-**Stack:** Python · PyTorch · NumPy · Matplotlib
-Duration: November 2024 – December 2024
+**Type:** Practical coursework of *S. Lamprier*  
+**Author:** <u>M. Mahamat</u>  
+**Duration:** November 2024 – December 2024
 
 ---
 
@@ -20,10 +24,10 @@ Duration: November 2024 – December 2024
 
 This project covers the implementation and experimentation of two fundamental **deep generative model** families:
 
-- **GAN** — Generative Adversarial Networks
-- **VAE** — Variational Autoencoders
+- **GAN** : Generative Adversarial Networks
+- **VAE** : Variational Autoencoders
 
-Both approaches are trained on standard benchmarks (**MNIST**, **CelebA**) and evaluated through visual inspection of generated samples and latent space analysis.
+Both approaches are trained on standard datasets (**MNIST**, **CelebA**) and evaluated through visual inspection of generated samples and latent space analysis.
 
 ---
 
@@ -33,10 +37,27 @@ Both approaches are trained on standard benchmarks (**MNIST**, **CelebA**) and e
 
 A GAN frames generation as a **two-player minimax game** between:
 
-| Network           | Role                                  | Objective    |
-| ----------------- | ------------------------------------- | ------------ |
-| Generator $G$     | Maps noise $z \sim p_z$ to data space | Fool $D$     |
-| Discriminator $D$ | Classifies real vs. generated         | Detect fakes |
+<table style="width:100%; border-collapse:collapse; font-size:0.95rem;">
+  <thead>
+    <tr style="background-color:#5b5b5b;">
+      <th style="border:1px solid #ccc; padding:10px 14px; text-align:left;">Network</th>
+      <th style="border:1px solid #ccc; padding:10px 14px; text-align:left;">Role</th>
+      <th style="border:1px solid #ccc; padding:10px 14px; text-align:left;">Objective</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border:1px solid #ccc; padding:10px 14px;"><strong>Generator</strong> $G$</td>
+      <td style="border:1px solid #ccc; padding:10px 14px;">Generates fakes samples</td>
+      <td style="border:1px solid #ccc; padding:10px 14px;">Fool $D$</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ccc; padding:10px 14px;"><strong>Discriminator</strong> $D$</td>
+      <td style="border:1px solid #ccc; padding:10px 14px;">Classifies real vs. generated</td>
+      <td style="border:1px solid #ccc; padding:10px 14px;">Detect fakes</td>
+    </tr>
+  </tbody>
+</table>
 
 The training objective is:
 
@@ -53,15 +74,26 @@ $$
   <img src="../assets/img/a-gan-architecture.png" alt="GAN Architecture" width="80%"/>
 </p>
 
-> The Generator takes a noise vector $z$ and progressively upsamples
-> it into a realistic image. The Discriminator acts as a binary
-> classifier between real and generated samples.
-
 ### Variant explored
 
-| Variant   | Key idea                                               |
-| --------- | ------------------------------------------------------ |
-| **DCGAN** | Convolutional layers, batch norm, more stable training |
+<table style="width:100%; border-collapse:collapse; font-size:0.95rem;">
+  <thead>
+    <tr style="background-color:#5b5b5b;">
+      <th style="border:1px solid #ccc; padding:10px 14px; text-align:left;">Variant</th>
+      <th style="border:1px solid #ccc; padding:10px 14px; text-align:left;">Key idea</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border:1px solid #ccc; padding:10px 14px;"><strong>DCGAN</strong></td>
+      <td style="border:1px solid #ccc; padding:10px 14px;">Convolutional layers, batch norm, more stable training</td>
+    </tr>
+  </tbody>
+</table>
+
+<p align="center">
+  <img src="https://i.stack.imgur.com/YyCu2.gif" alt="GAN training animation" width="55%"/>
+</p>
 
 ### Generated samples — MNIST
 
@@ -69,20 +101,8 @@ $$
   <img src="../assets/img/gan_mnist.png" alt="GAN MNIST samples" width="70%"/>
 </p>
 
-### Training dynamics
-
-<p align="center">
-  <img src="https://i.stack.imgur.com/YyCu2.gif" alt="GAN training animation" width="55%"/>
-</p>
-
-> Samples evolve from pure noise toward structured digits as training
-> progresses — illustrating the adversarial dynamic between $G$ and $D$.
-
-### Implementation highlights
-
-- Fully connected and convolutional architectures
-- Training instability analysis (mode collapse, vanishing gradients)
-- Visual inspection of generated samples across epochs
+> - Training instability analysis (mode collapse, vanishing gradients)
+> - Visual inspection of generated samples across epochs
 
 ---
 
@@ -98,11 +118,28 @@ $$
 - D_\text{KL}\!\left(q_\phi(z \mid x) \;\|\; p(z)\right)
 $$
 
-| Term                    | Role                                                    |
-| ----------------------- | ------------------------------------------------------- |
-| Reconstruction term     | Forces the decoder to recover $x$                       |
-| KL divergence           | Regularises the latent space toward $\mathcal{N}(0, I)$ |
-| Reparametrisation trick | Enables backprop through sampling                       |
+<table style="width:100%; border-collapse:collapse; font-size:0.95rem;">
+  <thead>
+    <tr style="background-color:#5b5b5b;">
+      <th style="border:1px solid #ccc; padding:10px 14px; text-align:left;">Term</th>
+      <th style="border:1px solid #ccc; padding:10px 14px; text-align:left;">Role</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border:1px solid #ccc; padding:10px 14px;">Reconstruction term</td>
+      <td style="border:1px solid #ccc; padding:10px 14px;">Forces the decoder to recover $x$</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ccc; padding:10px 14px;">KL divergence</td>
+      <td style="border:1px solid #ccc; padding:10px 14px;">Regularises the latent space toward $\mathcal{N}(0, I)$</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ccc; padding:10px 14px;">Reparametrisation trick</td>
+      <td style="border:1px solid #ccc; padding:10px 14px;">Enables backprop through sampling</td>
+    </tr>
+  </tbody>
+</table>
 
 ### Architecture
 
@@ -110,9 +147,7 @@ $$
   <img src="../assets/img/a-vae-architecture.png" alt="VAE Architecture" width="80%"/>
 </p>
 
-> The encoder outputs parameters $(\mu, \sigma)$ of a Gaussian
-> distribution. A latent vector $z$ is sampled via the reparametrisation
-> trick and decoded back into data space.
+The encoder outputs parameters $(\mu, \sigma)$ of a Gaussian distribution. A latent vector $z$ is sampled via the reparametrisation trick and decoded back into data space.
 
 ### Generated samples — MNIST
 
@@ -120,44 +155,57 @@ $$
   <img src="../assets/img/vae_mnist.png" alt="VAE MNIST samples" width="70%"/>
 </p>
 
-### Implementation highlights
-
-- Encoder / decoder architecture in PyTorch
-- Latent space visualisation (2D projections)
-- Interpolation in latent space
-- Comparison of sample quality vs. GAN
+> - Latent space visualisation in $\mathbb{R}^2$ projections via a dimension reduction (PCA)
 
 ---
 
-## GAN vs. VAE — Comparison
+## GAN vs. VAE
 
-| Property            | GAN                | VAE             |
-| ------------------- | ------------------ | --------------- |
-| Sample sharpness    | High               | Blurry          |
-| Training stability  | Unstable           | Stable          |
-| Latent structure    | No explicit space  | Structured      |
-| Likelihood estimate | Implicit           | Via ELBO        |
-| Mode coverage       | Mode collapse risk | Better coverage |
+<table style="width:100%; border-collapse:collapse; font-size:0.95rem;">
+  <thead>
+    <tr style="background-color:#5b5b5b;">
+      <th style="border:1px solid #ccc; padding:10px 14px; text-align:left;">Property</th>
+      <th style="border:1px solid #ccc; padding:10px 14px; text-align:center;">GAN</th>
+      <th style="border:1px solid #ccc; padding:10px 14px; text-align:center;">VAE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border:1px solid #ccc; padding:10px 14px;">Sample sharpness</td>
+      <td style="border:1px solid #ccc; padding:10px 14px; text-align:center;">High</td>
+      <td style="border:1px solid #ccc; padding:10px 14px; text-align:center;">Blurry</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ccc; padding:10px 14px;">Training stability</td>
+      <td style="border:1px solid #ccc; padding:10px 14px; text-align:center;">Unstable</td>
+      <td style="border:1px solid #ccc; padding:10px 14px; text-align:center;">Stable</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ccc; padding:10px 14px;">Latent structure</td>
+      <td style="border:1px solid #ccc; padding:10px 14px; text-align:center;">No explicit space</td>
+      <td style="border:1px solid #ccc; padding:10px 14px; text-align:center;">Structured</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ccc; padding:10px 14px;">Likelihood estimate</td>
+      <td style="border:1px solid #ccc; padding:10px 14px; text-align:center;">Implicit</td>
+      <td style="border:1px solid #ccc; padding:10px 14px; text-align:center;">Via ELBO</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ccc; padding:10px 14px;">Mode coverage</td>
+      <td style="border:1px solid #ccc; padding:10px 14px; text-align:center;">Mode collapse risk</td>
+      <td style="border:1px solid #ccc; padding:10px 14px; text-align:center;">Better coverage</td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
-## Tools & Stack
-
-- **Language:** Python
-- **Framework:** PyTorch
-- **Datasets:** MNIST, CelebA
-- **Visualisation:** Matplotlib, Seaborn
-- **Notebooks:** Jupyter (`.ipynb`)
-
----
-
-<div style="display:flex; gap:1rem; justify-content:center; margin: 2.5rem 0;">
-  <a href="https://github.com/mahamat9/Generative-Models"
-     class="btn btn-primary" role="button" target="_blank">
-    View on GitHub
+<div style="text-align: center; margin: 2.5rem 0; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+  <a href="{{ page.github }}" class="btn btn-primary" role="button" target="_blank">
+    <i class="fab fa-github"></i> More details on GitHub
   </a>
   <a href="https://github.com/mahamat9/Generative-Models/blob/main/Mod%C3%A8les_Generatifs_report.pdf"
      class="btn btn-secondary" role="button" target="_blank">
-    View report
+    Read the report
   </a>
 </div>

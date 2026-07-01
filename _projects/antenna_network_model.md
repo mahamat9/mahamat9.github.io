@@ -3,16 +3,20 @@ layout: page
 title: Antenna Network Model
 description: Mathematical study of signal power in antenna networks — Agrégation 2017 modeling problem
 img: assets/img/antenna_network.png
-importance: 11
+importance: 12
 category: academic
 github: https://github.com/mahamat9/Modele_d-antennes
 ---
 
+<style>
+  h2 { text-align: center; margin-top: 2rem; margin-bottom: 2rem; }
+</style>
+
 ## Overview
 
 **Duration:** October 2023 – December 2023  
-**Co-authors:** M. Charbonneau, A. Gonin  
-**Source:** External Agrégation Exam 2017 — Modeling Problem
+**Authors:** <u>M. Mahamat</u>, M. Charbonneau, A. Gonin  
+**Source of the topic:** External Agrégation Exam 2017 — Modeling Problem
 
 ---
 
@@ -59,11 +63,32 @@ The inverse problem: given target effective powers $\boldsymbol{\pi}$, find nomi
 
 Three implementations of the matrix $A$ were compared:
 
-| Version                   | $$n=100$$ | $$n=1000$$ |
-| ------------------------- | --------- | ---------- |
-| v1 (upper tri + symmetry) | 5.41 ms   | 548 ms     |
-| v2 (full double loop)     | 8.91 ms   | 1.15 s     |
-| v3 (upper tri only)       | 5.98 ms   | 643 ms     |
+<table style="width:100%; border-collapse:collapse; font-size:0.95rem; margin-bottom:2rem;">
+  <thead>
+    <tr style="background-color:#5b5b5b;">
+      <th style="border:1px solid #ccc; padding:10px 14px; text-align:left;">Version</th>
+      <th style="border:1px solid #ccc; padding:10px 14px; text-align:center;">n = 100</th>
+      <th style="border:1px solid #ccc; padding:10px 14px; text-align:center;">n = 1000</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border:1px solid #ccc; padding:10px 14px;">v1 (upper tri + symmetry)</td>
+      <td style="border:1px solid #ccc; padding:10px 14px; text-align:center;">5.41 ms</td>
+      <td style="border:1px solid #ccc; padding:10px 14px; text-align:center;">548 ms</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ccc; padding:10px 14px;">v2 (full double loop)</td>
+      <td style="border:1px solid #ccc; padding:10px 14px; text-align:center;">8.91 ms</td>
+      <td style="border:1px solid #ccc; padding:10px 14px; text-align:center;">1.15 s</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ccc; padding:10px 14px;">v3 (upper tri only)</td>
+      <td style="border:1px solid #ccc; padding:10px 14px; text-align:center;">5.98 ms</td>
+      <td style="border:1px solid #ccc; padding:10px 14px; text-align:center;">643 ms</td>
+    </tr>
+  </tbody>
+</table>
 
 **Version 1** is fastest. Resolution via hand-coded **LU factorization**:
 
@@ -71,10 +96,24 @@ $$
 A = LU \implies L\mathbf{y} = \boldsymbol{\pi}, \quad U\mathbf{x} = \mathbf{y}
 $$
 
-| $$n$$ | LU time |
-| ----- | ------- |
-| 20    | 3.41 ms |
-| 1000  | 7.57 s  |
+<table style="width:50%; border-collapse:collapse; font-size:0.95rem; margin-bottom:2rem;">
+  <thead>
+    <tr style="background-color:#5b5b5b;">
+      <th style="border:1px solid #ccc; padding:10px 14px; text-align:center;">n</th>
+      <th style="border:1px solid #ccc; padding:10px 14px; text-align:center;">LU time</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border:1px solid #ccc; padding:10px 14px; text-align:center;">20</td>
+      <td style="border:1px solid #ccc; padding:10px 14px; text-align:center;">3.41 ms</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ccc; padding:10px 14px; text-align:center;">1000</td>
+      <td style="border:1px solid #ccc; padding:10px 14px; text-align:center;">7.57 s</td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
@@ -96,12 +135,29 @@ $$
 
 **Step 2** — Update solution vector $\mathbf{x}$ incrementally.
 
-| $$n$$ | LU         | Toeplitz   |
-| ----- | ---------- | ---------- |
-| 20    | 3.41 ms    | 3.25 ms    |
-| 1000  | **7.57 s** | **396 ms** |
+<table style="width:60%; border-collapse:collapse; font-size:0.95rem; margin-bottom:2rem;">
+  <thead>
+    <tr style="background-color:#5b5b5b;">
+      <th style="border:1px solid #ccc; padding:10px 14px; text-align:center;">n</th>
+      <th style="border:1px solid #ccc; padding:10px 14px; text-align:center;">LU</th>
+      <th style="border:1px solid #ccc; padding:10px 14px; text-align:center;">Toeplitz</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border:1px solid #ccc; padding:10px 14px; text-align:center;">20</td>
+      <td style="border:1px solid #ccc; padding:10px 14px; text-align:center;">3.41 ms</td>
+      <td style="border:1px solid #ccc; padding:10px 14px; text-align:center;">3.25 ms</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ccc; padding:10px 14px; text-align:center;">1000</td>
+      <td style="border:1px solid #ccc; padding:10px 14px; text-align:center;"><strong>7.57 s</strong></td>
+      <td style="border:1px solid #ccc; padding:10px 14px; text-align:center;"><strong>396 ms</strong></td>
+    </tr>
+  </tbody>
+</table>
 
-**≈ 19× speedup** at $n=1000$ — no matrix storage required.
+**≈ 19× speedup** at $n=1000$, no matrix storage required.
 
 ---
 
@@ -141,18 +197,8 @@ $$
 
 ---
 
-## Tools & Methods
-
-- Toeplitz matrix theory & spectral analysis
-- LU factorization (hand-coded)
-- Levinson-Durbin algorithm
-- Constrained least squares via projection operators
-- NumPy, Matplotlib
-
----
-
 <div style="text-align: center; margin: 2.5rem 0;">
-  <a href="https://github.com/mahamat9/Modele_d-antennes" class="btn btn-primary" role="button" target="_blank">
-    More details on numerical part on GitHub
+  <a href="{{ page.github }}" class="btn btn-primary" role="button" target="_blank">
+    <i class="fab fa-github"></i> More details on numerical part on GitHub
   </a>
 </div>

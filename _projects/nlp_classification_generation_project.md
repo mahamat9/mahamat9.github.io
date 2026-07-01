@@ -1,18 +1,25 @@
 ---
 layout: page
-title: NLP — Classification & Title Generation
-description: Fine-tuning pretrained language models for fake news detection and article title generation
+title: NLP — Classification & Generation
+description: Training from scratch and Fine-tuning pretrained language models for fake news detection and article title generation
 img: assets/img/NLP-image-couv.jpg
 importance: 4
 category: academic
 github: https://github.com/mahamat9/Intro-NLP
 ---
 
+<style>
+  h2, h3 { text-align: center; margin-top: 2rem; margin-bottom: 2rem; }
+</style>
+
 ## Overview
 
-**Type**: Academic project — Conference/Workshop
-**Supervisor**: Batcouzé I.
+**Type**: Practical coursework during Conference/Workshop  
+**Author:** <u>M. Mahamat</u>  
 **Duration**: February 2025
+
+> Two complementary tasks: binary classification of misinformation, and abstractive
+> title generation from long-form articles.
 
 ---
 
@@ -20,10 +27,30 @@ github: https://github.com/mahamat9/Intro-NLP
 
 Two complementary NLP tasks exploring both **supervised classification** and **generative** capabilities of modern language models.
 
-| Task                         | Model                 | Dataset                | Metric           |
-| ---------------------------- | --------------------- | ---------------------- | ---------------- |
-| **Fake News Classification** | Custom CNN + Word2Vec | ~45k articles (Kaggle) | Accuracy, F1     |
-| **Title Generation**         | T5-small (fine-tuned) | TitleGen (Kaggle)      | ROUGE-1, ROUGE-2 |
+<table style="width:100%; border-collapse:collapse; font-size:0.95rem;">
+  <thead>
+    <tr style="background-color:#5b5b5b;">
+      <th style="border:1px solid #ccc; padding:10px 14px;">Task</th>
+      <th style="border:1px solid #ccc; padding:10px 14px;">Model</th>
+      <th style="border:1px solid #ccc; padding:10px 14px;">Dataset</th>
+      <th style="border:1px solid #ccc; padding:10px 14px;">Metrics</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border:1px solid #ccc; padding:10px 14px;"><strong>Fake News Classification</strong></td>
+      <td style="border:1px solid #ccc; padding:10px 14px;">Custom CNN + Word2Vec</td>
+      <td style="border:1px solid #ccc; padding:10px 14px;">~45 k articles (Kaggle)</td>
+      <td style="border:1px solid #ccc; padding:10px 14px;">Accuracy, F1</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ccc; padding:10px 14px;"><strong>Title Generation</strong></td>
+      <td style="border:1px solid #ccc; padding:10px 14px;">T5-small (fine-tuned)</td>
+      <td style="border:1px solid #ccc; padding:10px 14px;">TitleGen (Kaggle)</td>
+      <td style="border:1px solid #ccc; padding:10px 14px;">ROUGE-1, ROUGE-2</td>
+    </tr>
+  </tbody>
+</table>
 
 Both were carried out as part of the Batcouzé I. conference-workshop, February 2025.
 
@@ -37,9 +64,19 @@ Both were carried out as part of the Batcouzé I. conference-workshop, February 
 
 ### Pipeline
 
-```
-Text → BPE Tokenizer (25k vocab) → Word2Vec Embedding (100d) → Classifier
-```
+$$
+\begin{array}{c}
+\boxed{\text{Text Input } x \in \mathbb{R}^{n_{\text{tokens}}}} \\
+\downarrow \\
+\boxed{\text{BPE Tokenizer (25k vocab)}} \\
+\downarrow \\
+\boxed{\text{Word2Vec Embedding (100d)}} \\
+\downarrow \\
+\boxed{\text{Classifier}} \\
+\downarrow \\
+\boxed{\hat{y} \in \{0, 1\}} \quad \text{(Real / Fake)}
+\end{array}
+$$
 
 - **BPE** : Learned subword segmentation from scratch
 - **Word2Vec** : Skip-gram model (Gensim, `vector_size=100`, `window=5`, `min_count=2`)
@@ -55,37 +92,43 @@ $$h = \frac{1}{T}\sum_{t=1}^{T} e_t$$
 
 $$h = \frac{1}{T}\sum_{t=1}^{T} e_t \bigg/ \bigg\|\frac{1}{T}\sum_{t=1}^{T} e_t\bigg\|_2$$
 
-<details>
-<summary>CNN Classifier snippet</summary>
 
-```python
-class CNNClassifier(nn.Module):
-    def __init__(self, vocab_size, embed_dim=100, num_classes=2):
-        super().__init__()
-        self.embedding = nn.Embedding(vocab_size, embed_dim, padding_idx=0)
-        self.conv = nn.Conv1d(embed_dim, 256, kernel_size=3, padding=1)
-        self.fc = nn.Linear(256, num_classes)
+### Hyperparameters
 
-    def forward(self, x):
-        x = self.embedding(x)                          # (B, T, E)
-        x = x.permute(0, 2, 1)                         # (B, E, T)
-        x = F.relu(self.conv(x))                       # (B, 256, T)
-        x = F.adaptive_max_pool1d(x, 1).squeeze(-1)    # (B, 256)
-        return self.fc(x)
-```
-
-</details>
-
-### Training Configuration
-
-| Hyperparameter   | Value                 |
-| ---------------- | --------------------- |
-| Optimizer        | Adam                  |
-| Learning Rate    | `1e-3`                |
-| Batch Size       | `64`                  |
-| Epochs           | `15`                  |
-| Early Stopping   | Patience = `6` epochs |
-| Max Token Length | `256` tokens          |
+<table style="width:100%; border-collapse:collapse; font-size:0.95rem;">
+  <thead>
+    <tr style="background-color:#5b5b5b;">
+      <th style="border:1px solid #ccc; padding:10px 14px;">Parameter</th>
+      <th style="border:1px solid #ccc; padding:10px 14px;">Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border:1px solid #ccc; padding:10px 14px;">Optimizer</td>
+      <td style="border:1px solid #ccc; padding:10px 14px;">Adam</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ccc; padding:10px 14px;">Learning Rate</td>
+      <td style="border:1px solid #ccc; padding:10px 14px;"><code>1e-3</code></td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ccc; padding:10px 14px;">Batch Size</td>
+      <td style="border:1px solid #ccc; padding:10px 14px;"><code>64</code></td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ccc; padding:10px 14px;">Epochs</td>
+      <td style="border:1px solid #ccc; padding:10px 14px;"><code>15</code></td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ccc; padding:10px 14px;">Early Stopping</td>
+      <td style="border:1px solid #ccc; padding:10px 14px;">Patience = <code>6</code> epochs</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ccc; padding:10px 14px;">Max Sequence Length</td>
+      <td style="border:1px solid #ccc; padding:10px 14px;"><code>256</code> tokens</td>
+    </tr>
+  </tbody>
+</table>
 
 ### Visualizations
 
@@ -106,42 +149,89 @@ class CNNClassifier(nn.Module):
 
 T5 adopts a **text-to-text** paradigm: both inputs and outputs are raw text strings.
 
-```
-Input:  "Generate a title: The article body text here..."
-Output: "Predicted Article Title"
-```
+#### Architecture
 
-```
-Input: "Generate a title: <article text>"
-         |
-    ┌─────────────────┐
-    │  T5 Encoder     │  →  contextualized representations
-    └─────────────────┘
-         |
-    ┌─────────────────┐
-    │  T5 Decoder     │  →  auto-regressive token generation
-    └─────────────────┘
-         |
-Output: "<generated title>"
-```
+$$
+\begin{array}{c}
+\boxed{\text{Input: } \text{"Generate a title: "} + \text{article}} \\
+\downarrow \\
+\boxed{\text{Tokenizer}} \\
+\downarrow \\
+\boxed{\text{T5-small Encoder}} \quad \text{(contextualized representations)} \\
+\downarrow \\
+\boxed{\text{T5-small Decoder}} \quad \text{(auto-regressive generation)} \\
+\downarrow \\
+\boxed{\text{Beam Search}(k=4)} \quad \text{(select top-4 candidates)} \\
+\downarrow \\
+\boxed{\text{Output: generated title}}
+\end{array}
+$$
 
-| Property       | Value                           |
-| -------------- | ------------------------------- |
-| Architecture   | T5-small encoder-decoder        |
-| Parameters     | ~60M                            |
-| Pre-trained    | `google/t5-small` (HuggingFace) |
-| Special Prefix | `"Generate a title: "`          |
+#### Model Configuration
 
-### Training Configuration
+<table style="width:100%; border-collapse:collapse; font-size:0.95rem;">
+  <thead>
+    <tr style="background-color:#5b5b5b;">
+      <th style="border:1px solid #ccc; padding:10px 14px;">Property</th>
+      <th style="border:1px solid #ccc; padding:10px 14px;">Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border:1px solid #ccc; padding:10px 14px;">Architecture</td>
+      <td style="border:1px solid #ccc; padding:10px 14px;">T5-small encoder–decoder</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ccc; padding:10px 14px;">Parameters</td>
+      <td style="border:1px solid #ccc; padding:10px 14px;">~60M</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ccc; padding:10px 14px;">Pre-trained Checkpoint</td>
+      <td style="border:1px solid #ccc; padding:10px 14px;"><code>google/t5-small</code> (HuggingFace)</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ccc; padding:10px 14px;">Task Prefix</td>
+      <td style="border:1px solid #ccc; padding:10px 14px;"><code>"Generate a title: "</code></td>
+    </tr>
+  </tbody>
+</table>
 
-| Hyperparameter     | Value  |
-| ------------------ | ------ |
-| Optimizer          | Adam   |
-| Epochs             | `15`   |
-| Learning Rate      | `1e-4` |
-| Batch Size         | `4`    |
-| Beam Size          | `4`    |
-| Repetition Penalty | `2.5`  |
+### Fine-tuning Hyperparameters
+
+<table style="width:100%; border-collapse:collapse; font-size:0.95rem;">
+  <thead>
+    <tr style="background-color:#5b5b5b;">
+      <th style="border:1px solid #ccc; padding:10px 14px;">Parameter</th>
+      <th style="border:1px solid #ccc; padding:10px 14px;">Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border:1px solid #ccc; padding:10px 14px;">Optimizer</td>
+      <td style="border:1px solid #ccc; padding:10px 14px;">Adam</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ccc; padding:10px 14px;">Learning Rate</td>
+      <td style="border:1px solid #ccc; padding:10px 14px;"><code>1e-4</code></td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ccc; padding:10px 14px;">Batch Size</td>
+      <td style="border:1px solid #ccc; padding:10px 14px;"><code>4</code></td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ccc; padding:10px 14px;">Epochs</td>
+      <td style="border:1px solid #ccc; padding:10px 14px;"><code>15</code></td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ccc; padding:10px 14px;">Beam Size</td>
+      <td style="border:1px solid #ccc; padding:10px 14px;"><code>4</code></td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ccc; padding:10px 14px;">Repetition Penalty</td>
+      <td style="border:1px solid #ccc; padding:10px 14px;"><code>2.5</code></td>
+    </tr>
+  </tbody>
+</table>
 
 ### Deployment
 
@@ -151,28 +241,38 @@ Model on HuggingFace Hub: [Ivanhoe9/finetune_T5_small_title_generation_NLP_cours
 
 ## Results Summary
 
-| Task                        | Accuracy | F1       | ROUGE-1  | ROUGE-2  |
-| --------------------------- | -------- | -------- | -------- | -------- |
-| Fake News Classification    | **0.92** | **0.91** | —        | —        |
-| Title Generation (T5-small) | —        | —        | **0.42** | **0.18** |
+<table style="width:100%; border-collapse:collapse; font-size:0.95rem;">
+  <thead>
+    <tr style="background-color:#5b5b5b;">
+      <th style="border:1px solid #ccc; padding:10px 14px;">Task</th>
+      <th style="border:1px solid #ccc; padding:10px 14px;">Accuracy</th>
+      <th style="border:1px solid #ccc; padding:10px 14px;">F1</th>
+      <th style="border:1px solid #ccc; padding:10px 14px;">ROUGE-1</th>
+      <th style="border:1px solid #ccc; padding:10px 14px;">ROUGE-2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border:1px solid #ccc; padding:10px 14px;"><strong>Fake News Classification</strong></td>
+      <td style="border:1px solid #ccc; padding:10px 14px; text-align:center;"><strong>0.92</strong></td>
+      <td style="border:1px solid #ccc; padding:10px 14px; text-align:center;"><strong>0.91</strong></td>
+      <td style="border:1px solid #ccc; padding:10px 14px; text-align:center;">—</td>
+      <td style="border:1px solid #ccc; padding:10px 14px; text-align:center;">—</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ccc; padding:10px 14px;"><strong>Title Generation</strong></td>
+      <td style="border:1px solid #ccc; padding:10px 14px; text-align:center;">—</td>
+      <td style="border:1px solid #ccc; padding:10px 14px; text-align:center;">—</td>
+      <td style="border:1px solid #ccc; padding:10px 14px; text-align:center;"><strong>0.42</strong></td>
+      <td style="border:1px solid #ccc; padding:10px 14px; text-align:center;"><strong>0.18</strong></td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
-## Tools & Stack
-
-| Tool                         | Role                                |
-| ---------------------------- | ----------------------------------- |
-| **PyTorch**                  | Model implementation & training     |
-| **HuggingFace Transformers** | T5-small, tokenizers, trainer       |
-| **Gensim**                   | Word2Vec skip-gram pretraining      |
-| **tokenizers**               | Custom BPE tokenizer (from scratch) |
-| **TensorBoard**              | Training metrics visualization      |
-| **pandas / NumPy**           | Data loading & preprocessing        |
-| **scikit-learn**             | Metrics (F1, confusion matrix), PCA |
-| **matplotlib / seaborn**     | Plots                               |
-
----
-
-<div style="display:flex; gap:1rem; justify-content:center; margin: 2.5rem 0;">
-  <a href="https://github.com/mahamat9/Intro-NLP" class="btn btn-primary" role="button" target="_blank">View on GitHub</a>
+<div style="text-align: center; margin: 2.5rem 0; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+  <a href="{{ page.github }}" class="btn btn-primary" role="button" target="_blank">
+    <i class="fab fa-github"></i> More details on GitHub
+  </a>
 </div>
