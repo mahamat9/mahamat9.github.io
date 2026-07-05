@@ -1,10 +1,11 @@
 ---
 layout: page
 title: Deep image processing projects
-description: Object detection and image segmentation
+description: Applied computer vision study covering object detection, segmentation, and transfer-learning based evaluation protocols.
 img: assets/img/cv_illustration.jpg
 importance: 2
 category: academic
+scientific_category: applied-ml-dl
 giscus_comments: true
 github: https://github.com/mahamat9/deep-processing-images
 ---

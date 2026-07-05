@@ -48,7 +48,7 @@ repo_trophies:
 
 navbar_fixed: true
 footer_fixed: false
-search_enabled: true
+search_enabled: false #true
 socials_in_search: true
 posts_in_search: true
 bib_search: true
@@ -226,6 +226,7 @@ exclude:
   - _pages/blog.md # exclude blog page from build
   #- _pages/projects.md # exclude projects page from build
 
+  - _pages/_posts.md # exclude posts page from build
   - _pages/dropdown.md # exclude dropdown page from build
   # dropdown used for listing others (e.g., projects) in a dropdown menu in the navbar, but the page itself is not meant to be accessed directly
 

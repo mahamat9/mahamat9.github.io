@@ -1,10 +1,11 @@
 ---
 layout: page
 title: NLP — Classification & Generation
-description: Training from scratch and Fine-tuning pretrained language models for fake news detection and article title generation
+description: Applied NLP pipeline combining supervised misinformation classification and transformer-based abstractive title generation.
 img: assets/img/NLP-image-couv.jpg
 importance: 4
 category: academic
+scientific_category: applied-ml-dl
 github: https://github.com/mahamat9/Intro-NLP
 ---
 

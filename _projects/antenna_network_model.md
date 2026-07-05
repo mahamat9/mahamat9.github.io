@@ -1,10 +1,11 @@
 ---
 layout: page
 title: Antenna Network Model
-description: Mathematical study of signal power in antenna networks — Agrégation 2017 modeling problem
+description: Mathematical modeling and asymptotic analysis of received power in multi-antenna network configurations.
 img: assets/img/antenna_network.png
 importance: 12
 category: academic
+scientific_category: math
 github: https://github.com/mahamat9/Modele_d-antennes
 ---
 

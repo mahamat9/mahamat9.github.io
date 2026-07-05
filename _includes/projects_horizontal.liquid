@@ -1,4 +1,4 @@
-<div class="col mb-4">
+<div class="col mb-4 project-card-item" data-scientific-category="{{ project.scientific_category | default: 'other' }}">
   <a href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}">
     <div class="card h-100 hoverable">
       <div class="row no-gutters">
@@ -11,6 +11,22 @@
           <div class="card-body">
             <h3 class="card-title">{{ project.title }}</h3>
             <p class="card-text">{{ project.description }}</p>
+            {% assign scientific_category = project.scientific_category | default: "other" %}
+            {% case scientific_category %}
+              {% when "applied-ml-dl" %}
+                {% assign scientific_category_label = "Applied ML & DL" %}
+              {% when "dev-big-data" %}
+                {% assign scientific_category_label = "Dev / Big Data" %}
+              {% when "statistics" %}
+                {% assign scientific_category_label = "Statistics" %}
+              {% when "math" %}
+                {% assign scientific_category_label = "Math" %}
+              {% when "challenge" %}
+                {% assign scientific_category_label = "Challenge" %}
+              {% else %}
+                {% assign scientific_category_label = "Other" %}
+            {% endcase %}
+            <span class="project-domain-badge">{{ scientific_category_label }}</span>
             <div class="row ml-1 mr-1 p-0">
               {% if project.github %}
                 <div class="github-icon">

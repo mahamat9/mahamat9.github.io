@@ -1,11 +1,12 @@
 ---
 layout: page
 title: Bibli — Electronic Library Application
-description: University project — An object-oriented library management application with web scraping and automated report generation
+description: Software engineering project implementing an object-oriented digital library system with scraping and automated reporting workflows.
 #description: A Python application to create, populate and report on a digital library via web scraping — OOP university project
 img: assets/img/bibli_app.png
 importance: 11
 category: academic
+scientific_category: dev-big-data
 github: "https://github.com/mahamat9/Application-Bibli"
 ---
 

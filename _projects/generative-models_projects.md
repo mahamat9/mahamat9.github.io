@@ -1,10 +1,11 @@
 ---
 layout: page
 title: Generative Models — GAN & VAE
-description: Implementation and experimentation of GAN and VAE architectures on MNIST and CelebA
+description: Experimental study of adversarial and variational generative architectures with quantitative and qualitative evaluation.
 img: assets/img/gan_vae-architectures.png
 importance: 3
 category: academic
+scientific_category: applied-ml-dl
 github: https://github.com/mahamat9/Generative-Models
 ---
 

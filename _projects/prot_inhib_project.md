@@ -1,11 +1,12 @@
 ---
 layout: page
 title: Molecule–Protein Inhibition Prediction
-description: Data challenge — predicting protein inhibition by small molecules for drug discovery
+description: Statistical learning challenge for pIC50 prediction using molecular fingerprints and nonlinear regression models.
 #description: Drug discovery data challenge — predicting pIC50 with Morgan fingerprints & XGBoost
 img: assets/img/prot_inhib_cover.jpg
 importance: 6
 category: academic
+scientific_category: challenge #applied-ml-dl
 github: https://github.com/mahamat9/Challenge-prot-inhib
 ---
 

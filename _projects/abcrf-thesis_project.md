@@ -1,10 +1,11 @@
 ---
 layout: page
 title: ABC-RF : Approximate Bayesian Computation via Random Forests
-description: Mathematical foundations and genomic applications of ABC-RF — Master 1 research thesis
+description: Statistical inference project on likelihood-free Bayesian estimation with Random Forest summaries for genomic applications.
 img: assets/img/ma-2_abc.png
 importance: 9
 category: academic
+scientific_category: statistics
 github: https://github.com/mahamat9/Projet-de-recherche-ABC-RF
 ---
 

@@ -1,10 +1,11 @@
 ---
 layout: page
 title: Diffusion Generative Models #project 1
-description: Master's thesis on mathematical foundations and practical implementations #with background image
+description: Research thesis on stochastic foundations and implementation of denoising diffusion probabilistic models for generative learning.
 img: assets/img/diffusion_illustration.png
 importance: 1
 category: academic
+scientific_category: applied-ml-dl
 #related_publications: true
 github: https://github.com/mahamat9/diffusion_model_M2DSUA
 ---

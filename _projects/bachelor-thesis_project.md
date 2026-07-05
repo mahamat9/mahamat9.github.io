@@ -1,10 +1,11 @@
 ---
 layout: page
 title: Real Roots of Real Polynomials
-description: Bachelor's thesis on A necessary and sufficient condition for all roots of a real polynomial to be real
+description: Theoretical analysis of algebraic criteria ensuring that all roots of a real polynomial are real-valued.
 img: assets/img/polynomials_roots.png
 importance: 13
 category: academic
+scientific_category: math
 mailto: mmahamatnour99@gmail.com
 ---
 
