@@ -3,8 +3,8 @@ const ninja = document.querySelector('ninja-keys');
 
 // add the home and posts menu items
 ninja.data = [{
-    id: "nav-about-me",
-    title: "About me",
+    id: "nav-about",
+    title: "About",
     section: "Navigation",
     handler: () => {
       window.location.href = "/";
@@ -377,11 +377,6 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_3/";
-            },},{id: "projects-project-8",
-          title: 'project 8',
-          description: "an other project with a background image and giscus comments",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/8_project/";
             },},{id: "projects-",
           title: '',
           description: "",
@@ -389,67 +384,67 @@ ninja.data = [{
               window.location.href = "/projects/abcrf-thesis_project/";
             },},{id: "projects-antenna-network-model",
           title: 'Antenna Network Model',
-          description: "Mathematical study of signal power in antenna networks — Agrégation 2017 modeling problem",
+          description: "Mathematical modeling and asymptotic analysis of received power in multi-antenna network configurations.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/antenna_network_model/";
             },},{id: "projects-real-roots-of-real-polynomials",
           title: 'Real Roots of Real Polynomials',
-          description: "Bachelor&#39;s thesis on A necessary and sufficient condition for all roots of a real polynomial to be real",
+          description: "Theoretical analysis of algebraic criteria ensuring that all roots of a real polynomial are real-valued.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/bachelor-thesis_project/";
             },},{id: "projects-enron-email-investigation-app",
           title: 'Enron Email Investigation App',
-          description: "Relational Database and Web application for judicial data exploration",
+          description: "End-to-end data engineering and web analytics platform for exploratory forensic analysis of the Enron email corpus.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/bddr_enron_project/";
             },},{id: "projects-bibli-electronic-library-application",
           title: 'Bibli — Electronic Library Application',
-          description: "University project — An object-oriented library management application with web scraping and automated report generation",
+          description: "Software engineering project implementing an object-oriented digital library system with scraping and automated reporting workflows.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/bibli_project/";
             },},{id: "projects-deep-image-processing-projects",
           title: 'Deep image processing projects',
-          description: "Object detection and image segmentation",
+          description: "Applied computer vision study covering object detection, segmentation, and transfer-learning based evaluation protocols.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/cv_project/";
             },},{id: "projects-diffusion-generative-models",
           title: 'Diffusion Generative Models',
-          description: "Master&#39;s thesis on mathematical foundations and practical implementations",
+          description: "Research thesis on stochastic foundations and implementation of denoising diffusion probabilistic models for generative learning.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/diffusion_project/";
             },},{id: "projects-ecg-denoising-with-deep-learning",
           title: 'ECG Denoising with Deep Learning',
-          description: "",
+          description: "Comparative benchmarking of convolutional and diffusion-based denoising models for multilead PTB-XL ECG reconstruction.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/ecg_project/";
             },},{id: "projects-generative-models-gan-amp-vae",
           title: 'Generative Models — GAN &amp;amp; VAE',
-          description: "Implementation and experimentation of GAN and VAE architectures on MNIST and CelebA",
+          description: "Experimental study of adversarial and variational generative architectures with quantitative and qualitative evaluation.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/generative-models_projects/";
             },},{id: "projects-econometric-analysis-of-life-expectancy-drivers",
           title: 'Econometric Analysis of Life Expectancy Drivers',
-          description: "Multi-method econometric analysis identifying key determinants of global life expectancy across 193 countries (2000–2015)",
+          description: "Panel-data econometric analysis of structural determinants of life expectancy across 193 countries over 2000-2015.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/life_expectancy_project/";
             },},{id: "projects-nlp-classification-amp-generation",
           title: 'NLP — Classification &amp;amp; Generation',
-          description: "Training from scratch and Fine-tuning pretrained language models for fake news detection and article title generation",
+          description: "Applied NLP pipeline combining supervised misinformation classification and transformer-based abstractive title generation.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/nlp_classification_generation_project/";
             },},{id: "projects-molecule-protein-inhibition-prediction",
           title: 'Molecule–Protein Inhibition Prediction',
-          description: "Data challenge — predicting protein inhibition by small molecules for drug discovery",
+          description: "Statistical learning challenge for pIC50 prediction using molecular fingerprints and nonlinear regression models.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/prot_inhib_project/";
             },},{id: "projects-reinforcement-learning",
           title: 'Reinforcement Learning',
-          description: "Implementation of Deep Q-Network and Proximal Policy Optimization on classic control and Atari environments",
+          description: "Comparative reinforcement learning implementation of value-based and policy-gradient agents on control and Atari benchmarks.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/rl_dqn_ppo_project/";
             },},{id: "projects-estimation-in-dependent-stationary-series",
           title: 'Estimation in Dependent Stationary Series',
-          description: "Bias and asymptotic variance of estimators (mean, variance, quantiles) under mixing conditions",
+          description: "Asymptotic statistical study of estimator bias and variance in dependent stationary time-series under mixing assumptions.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/time_series_estimation_project/";
             },},{
