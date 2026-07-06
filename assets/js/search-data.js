@@ -377,9 +377,14 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_3/";
-            },},{id: "projects-",
-          title: '',
+            },},{id: "news-our-m2-internship-on-cetacean-vocalization-detection-at-serenade-2026",
+          title: 'Our M2 Internship on Cetacean Vocalization Detection at SERENADE 2026',
           description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/serenade_announcement/";
+            },},{id: "projects-abc-rf-approximate-bayesian-computation-via-random-forests",
+          title: 'ABC-RF : Approximate Bayesian Computation via Random Forests',
+          description: "Statistical inference project on likelihood-free Bayesian estimation with Random Forest summaries for genomic applications.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/abcrf-thesis_project/";
             },},{id: "projects-antenna-network-model",
