@@ -15,7 +15,7 @@ github: https://github.com/mahamat9/Generative-Models
 
 ## Overview
 
-**Type:** Practical coursework of *S. Lamprier*  
+**Type:** Practical coursework of _S. Lamprier_  
 **Author:** <u>M. Mahamat</u>  
 **Duration:** November 2024 – December 2024
 

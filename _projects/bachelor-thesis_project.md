@@ -17,7 +17,7 @@ mailto: mmahamatnour99@gmail.com
 
 **Duration:** January 2023 – May 2023  
 **Supervisors:** Mohammed El Amrani — University of Angers  
-**Authors:** <u>M. Mahamat</u>, K. Le Bihan, M. Hedde  
+**Authors:** <u>M. Mahamat</u>, K. Le Bihan, M. Hedde
 
 ---
 

@@ -15,7 +15,7 @@ github: https://github.com/mahamat9/RL-DQN-PPO
 
 ## Overview
 
-**Type:** Practical coursework of *S. Lamprier*  
+**Type:** Practical coursework of _S. Lamprier_  
 **Author:** <u>M. Mahamat</u>  
 **Duration:** November 2024 – December 2024
 
@@ -126,6 +126,7 @@ $$
 \boxed{\pi(s) = \arg\max_a Q_\theta(s, a)} \quad \text{(greedy policy)}
 \end{array}
 
+
 $$
 
 ### Variants
@@ -193,6 +194,7 @@ $$
 \text{Actor head} & \text{Critic head}
 \end{array}
 \end{array}
+
 
 $$
 

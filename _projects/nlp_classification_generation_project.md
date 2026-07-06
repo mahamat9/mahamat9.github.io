@@ -93,7 +93,6 @@ $$h = \frac{1}{T}\sum_{t=1}^{T} e_t$$
 
 $$h = \frac{1}{T}\sum_{t=1}^{T} e_t \bigg/ \bigg\|\frac{1}{T}\sum_{t=1}^{T} e_t\bigg\|_2$$
 
-
 ### Hyperparameters
 
 <table style="width:100%; border-collapse:collapse; font-size:0.95rem;">

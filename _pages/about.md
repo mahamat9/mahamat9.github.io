@@ -3,7 +3,8 @@ layout: about
 title: About
 permalink: /
 #subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
-subtitle: "Applied Mathematics MSc · Data Science · Statistical learning, signal processing, deep image processing, and interpretable methods for societal challenges"
+subtitle:
+  "Applied Mathematics MSc · Data Science · Statistical learning, signal processing, deep image processing, and interpretable methods for societal challenges"
   #Medical deep learning, image processing, generative AI
 
 profile:
@@ -11,9 +12,9 @@ profile:
   image: pic_prof.png
   image_circular: false # crops the image to make it circular
   #more_info: >
-    #<p>Brest, France</p>
-    #<p>Seeking a <b>PhD or applied research position</b>, without location constraints.</p>
-    #<p><a href="/files/CV.pdf">Full CV (PDF)</a></p>
+  #<p>Brest, France</p>
+  #<p>Seeking a <b>PhD or applied research position</b>, without location constraints.</p>
+  #<p><a href="/files/CV.pdf">Full CV (PDF)</a></p>
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
@@ -90,6 +91,6 @@ Having explored the interpretable end of the spectrum, I now want to bring the s
 
 **Looking ahead**
 
-Today, I am looking to commit to a **PhD or an applied research position**. My objective is to develop genuine scientific autonomy—moving from the *use* to the *design* of methodological tools—on problems where applied mathematics can address concrete societal needs: **health, environment, biodiversity**.
+Today, I am looking to commit to a **PhD or an applied research position**. My objective is to develop genuine scientific autonomy—moving from the _use_ to the _design_ of methodological tools—on problems where applied mathematics can address concrete societal needs: **health, environment, biodiversity**.
 
 Let's connect to discuss research opportunities or collaborations where mathematics can make a difference.

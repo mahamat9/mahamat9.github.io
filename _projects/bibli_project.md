@@ -17,7 +17,7 @@ github: "https://github.com/mahamat9/Application-Bibli"
 ## Overview
 
 **Duration:** November 2023 – January 2024  
-**Authors:** <u>M. Mahamat</u>, A. Gonin  
+**Authors:** <u>M. Mahamat</u>, A. Gonin
 
 ---
 

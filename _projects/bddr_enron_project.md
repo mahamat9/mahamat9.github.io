@@ -16,7 +16,7 @@ github: https://github.com/mahamat9/Base-de-donnees-et-Application-web-sur-donne
 ## Overview
 
 **Duration:** January – May 2024  
-**Authors:** <u>M. Mahamat</u>, M. Charbonneau  
+**Authors:** <u>M. Mahamat</u>, M. Charbonneau
 
 ---
 
@@ -27,6 +27,7 @@ The **Enron scandal** (2001) triggered the release of one of the largest real-wo
 This project turns that raw corpus into a **queryable web application**: a structured PostgreSQL database, populated entirely by Python parsing scripts, exposed through a Django interface designed for investigators with no technical background.
 
 Three questions drove the design:
+
 - Who communicated with whom, and how often?
 - What was said — and when?
 - Can a non-technical user reconstruct a thread from a single message ID?
