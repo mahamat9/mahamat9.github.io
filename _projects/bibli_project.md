@@ -5,7 +5,7 @@ description: Software engineering project implementing an object-oriented digita
 #description: A Python application to create, populate and report on a digital library via web scraping — OOP university project
 img: assets/img/bibli_app.png
 importance: 11
-category: academic
+category: Academic
 scientific_category: dev-big-data
 github: "https://github.com/mahamat9/Application-Bibli"
 ---

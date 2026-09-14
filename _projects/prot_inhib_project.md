@@ -5,7 +5,7 @@ description: Statistical learning challenge for pIC50 prediction using molecular
 #description: Drug discovery data challenge — predicting pIC50 with Morgan fingerprints & XGBoost
 img: assets/img/prot_inhib_cover.jpg
 importance: 6
-category: academic
+category: Academic
 scientific_category: challenge #applied-ml-dl
 github: https://github.com/mahamat9/Challenge-prot-inhib
 ---

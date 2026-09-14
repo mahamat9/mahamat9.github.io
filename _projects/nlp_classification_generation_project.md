@@ -1,10 +1,10 @@
 ---
 layout: page
-title: NLP — Classification & Generation
+title: Natural language processing # NLP — Classification & Generation
 description: Applied NLP pipeline combining supervised misinformation classification and transformer-based abstractive title generation.
 img: assets/img/NLP-image-couv.jpg
 importance: 4
-category: academic
+category: Academic
 scientific_category: applied-ml-dl
 github: https://github.com/mahamat9/Intro-NLP
 ---

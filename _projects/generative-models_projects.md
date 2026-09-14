@@ -4,7 +4,7 @@ title: Generative Models — GAN & VAE
 description: Experimental study of adversarial and variational generative architectures with quantitative and qualitative evaluation.
 img: assets/img/gan_vae-architectures.png
 importance: 3
-category: academic
+category: Academic
 scientific_category: applied-ml-dl
 github: https://github.com/mahamat9/Generative-Models
 ---

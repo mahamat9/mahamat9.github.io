@@ -4,7 +4,7 @@ title: Estimation in Dependent Stationary Series
 description: Asymptotic statistical study of estimator bias and variance in dependent stationary time-series under mixing assumptions.
 img: assets/img/ts_estimation_illustration.png
 importance: 8
-category: academic
+category: Academic
 scientific_category: statistics
 github: https://github.com/mahamat9/Time-Series-Estimation
 ---

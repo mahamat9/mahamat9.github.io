@@ -7,4 +7,7 @@ related_posts: false
 ---
 
 I am pleased to share that our M2 internship work, “Unsupervised Detection of Cetacean Vocalizations using Non-negative Matrix Factorization” (M. Mahamat, A. Marmoret, D. Cazau), has been accepted for presentation at the SERENADE 2026 workshop.
+
 A draft paper may be released soon.
+
+The work is available on [HAL](https://hal.science/hal-05668390v1).

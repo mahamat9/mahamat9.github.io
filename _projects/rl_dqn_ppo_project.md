@@ -4,7 +4,7 @@ title: Reinforcement Learning
 description: Comparative reinforcement learning implementation of value-based and policy-gradient agents on control and Atari benchmarks.
 img: assets/img/q-learning-rl.png
 importance: 5
-category: academic
+category: Academic
 scientific_category: applied-ml-dl
 github: https://github.com/mahamat9/RL-DQN-PPO
 ---

@@ -4,7 +4,7 @@ title: Econometric Analysis of Life Expectancy Drivers
 description: Panel-data econometric analysis of structural determinants of life expectancy across 193 countries over 2000-2015.
 img: assets/img/econometrics_illus.png
 importance: 7
-category: academic
+category: Academic
 scientific_category: statistics
 github: https://github.com/mahamat9/Econometric-Methods
 ---

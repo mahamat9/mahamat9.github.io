@@ -4,7 +4,7 @@ title: Enron Email Investigation App
 description: End-to-end data engineering and web analytics platform for exploratory forensic analysis of the Enron email corpus.
 img: assets/img/bddr_illustration.png
 importance: 10
-category: academic
+category: Academic
 scientific_category: dev-big-data
 github: https://github.com/mahamat9/Base-de-donnees-et-Application-web-sur-donnees-Enron
 ---

@@ -4,7 +4,7 @@ title: "ABC-RF : Approximate Bayesian Computation via Random Forests"
 description: Statistical inference project on likelihood-free Bayesian estimation with Random Forest summaries for genomic applications.
 img: assets/img/ma-2_abc.png
 importance: 9
-category: academic
+category: Academic
 scientific_category: statistics
 github: https://github.com/mahamat9/Projet-de-recherche-ABC-RF
 ---
@@ -16,8 +16,8 @@ github: https://github.com/mahamat9/Projet-de-recherche-ABC-RF
 ## Overview
 
 **Duration:** January – May 2024  
-**Supervisors:** Charles-Elie Rabier — University of Angers  
 **Authors:** <u>M. Mahamat</u>, M. Charbonneau, R. Jaffal  
+**Supervisor:** Charles-Elie Rabier — University of Angers  
 **Type:** Master 1 Research Thesis
 
 ---

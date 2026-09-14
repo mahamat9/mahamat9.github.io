@@ -4,7 +4,7 @@ title: Real Roots of Real Polynomials
 description: Theoretical analysis of algebraic criteria ensuring that all roots of a real polynomial are real-valued.
 img: assets/img/polynomials_roots.png
 importance: 13
-category: academic
+category: Academic
 scientific_category: math
 mailto: mmahamatnour99@gmail.com
 ---
@@ -12,11 +12,14 @@ mailto: mmahamatnour99@gmail.com
 <style>
   h2 { text-align: center; margin-top: 2rem; margin-bottom: 2rem; }
 </style>
+<style>
+  h3, h4 { margin-top: 2rem; margin-bottom: 2rem; }
+</style>
 
 ## Overview
 
 **Duration:** January 2023 – May 2023  
-**Supervisors:** Mohammed El Amrani — University of Angers  
+**Supervisor:** Mohammed El Amrani — University of Angers  
 **Authors:** <u>M. Mahamat</u>, K. Le Bihan, M. Hedde
 
 ---

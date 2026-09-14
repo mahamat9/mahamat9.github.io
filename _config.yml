@@ -232,8 +232,10 @@ exclude:
 
   - _pages/collaborators.md # exclude people page from build
   - _pages/teaching.md # exclude teaching page from build
-  - _pages/publications.md # exclude publications page from build
+  #- _pages/publications.md # exclude publications page from build
   - _pages/books.md # exclude books page from build
+
+  - _pages/cv.md # exclude cv page from build for a cv format pdf in /about
 
   - bin/
   - CONTRIBUTING.md
