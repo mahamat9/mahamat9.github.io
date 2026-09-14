@@ -20,7 +20,7 @@ github: https://github.com/mahamat9/diffusion_model_M2DSUA
 **Type:** Master 2 Research Thesis  
 **Authors:** <u>M. Mahamat</u> · T. Gipteau · A. Gonin  
 **Supervisor:** [Pr. Fabien Panloup](https://blog.univ-angers.fr/panloup/) — University of Angers, LAREMA  
-**Duration**: November 2024 – March 2025  
+**Duration**: November 2024 – March 2025
 
 ---
 
@@ -53,7 +53,7 @@ Two complementary measures were used:
 
 The two are deliberately paired: MML alone rewards a model that produces one perfect digit endlessly,
 while coverage alone rewards a model that spreads uniformly over unrecognisable noise. Read together, they
-separate *fidelity* from *diversity*.
+separate _fidelity_ from _diversity_.
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-10 mt-3 mt-md-0">

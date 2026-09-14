@@ -14,7 +14,7 @@ github: https://github.com/mahamat9/deep-denoising-ecg
 
 **Type:** Personal project  
 **Data:** PTB-XL — 12-lead clinical ECG  
-**Code:** [github.com/mahamat9/deep-denoising-ecg](https://github.com/mahamat9/deep-denoising-ecg)  
+**Code:** [github.com/mahamat9/deep-denoising-ecg](https://github.com/mahamat9/deep-denoising-ecg)
 
 ---
 
@@ -70,7 +70,7 @@ The choice matters, and is a **limitation**: simulated noise is additive and ind
 
 ## Models
 
-**CDAE** : a 1D U-Net-style encoder–decoder with residual learning. Skip connections preserve the temporal resolution needed to keep *QRS morphology* intact; the residual formulation makes the network predict the *noise* rather than the signal, which is the easier target when the SNR is already moderate.
+**CDAE** : a 1D U-Net-style encoder–decoder with residual learning. Skip connections preserve the temporal resolution needed to keep _QRS morphology_ intact; the residual formulation makes the network predict the _noise_ rather than the signal, which is the easier target when the SNR is already moderate.
 **One forward pass per reconstruction.**
 
 **DDPM** : trained to predict the injected noise across timesteps, then run in reverse to reconstruct the signal. The model learns a distribution over plausible ECGs rather than a point-wise mapping, which in principle handles ambiguous segments better. **Cost: multiple sequential evaluations per reconstruction.**

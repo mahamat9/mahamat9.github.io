@@ -17,10 +17,10 @@ github: https://github.com/mahamat9/deep-processing-images
 
 ## Overview
 
-**Type:** Practical coursework — *D. Rousseau*, University of Angers  
+**Type:** Practical coursework — _D. Rousseau_, University of Angers  
 **Author:** <u>M. Mahamat</u>  
 **Date:** February 2025  
-**Code:** [github.com/mahamat9/deep-processing-images](https://github.com/mahamat9/deep-processing-images)  
+**Code:** [github.com/mahamat9/deep-processing-images](https://github.com/mahamat9/deep-processing-images)
 
 ---
 
@@ -30,7 +30,7 @@ Three assignments covering the classical progression of computer vision tasks: *
 
 ## Image classification
 
-*[Repository](https://github.com/mahamat9/deep-processing-images/tree/main/CNN%20%2B%20TP%20clf)*
+_[Repository](https://github.com/mahamat9/deep-processing-images/tree/main/CNN%20%2B%20TP%20clf)_
 
 A convolutional classifier trained end-to-end, used as a baseline.
 
@@ -41,7 +41,7 @@ A convolutional classifier trained end-to-end, used as a baseline.
 
 ## Blood cell segmentation
 
-*[Repository](https://github.com/mahamat9/deep-processing-images/tree/main/TP%20Segmentation)*
+_[Repository](https://github.com/mahamat9/deep-processing-images/tree/main/TP%20Segmentation)_
 
 Pixel-level segmentation of blood cells, comparing a purpose-built architecture against a frozen pretrained encoder.
 
@@ -72,7 +72,7 @@ The metric choice matters here more than anywhere else: on images dominated by b
 
 ## Object detection
 
-*[Repository](https://github.com/mahamat9/deep-processing-images/tree/main/TP%20Object%20Detection)*
+_[Repository](https://github.com/mahamat9/deep-processing-images/tree/main/TP%20Object%20Detection)_
 
 Detection of apples in orchard imagery; a setting with heavy occlusion, variable lighting and objects that are small relative to the frame.
 
