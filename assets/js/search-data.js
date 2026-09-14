@@ -9,19 +9,19 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-projects",
+  },{id: "nav-publications",
+          title: "Publications",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/publications/";
+          },
+        },{id: "nav-projects",
           title: "Projects",
           description: "A collection of my main academic and personal projects.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
-          },
-        },{id: "nav-my-curriculum-vitæ",
-          title: "My Curriculum vitæ",
-          description: "More details in my full Resume",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/cv/";
           },
         },{id: "post-a-post-with-plotly-js",
         
@@ -407,14 +407,14 @@ ninja.data = [{
           description: "Software engineering project implementing an object-oriented digital library system with scraping and automated reporting workflows.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/bibli_project/";
-            },},{id: "projects-deep-image-processing-projects",
-          title: 'Deep image processing projects',
+            },},{id: "projects-deep-image-processing",
+          title: 'Deep image processing',
           description: "Applied computer vision study covering object detection, segmentation, and transfer-learning based evaluation protocols.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/cv_project/";
             },},{id: "projects-diffusion-generative-models",
           title: 'Diffusion Generative Models',
-          description: "Research thesis on stochastic foundations and implementation of denoising diffusion probabilistic models for generative learning.",
+          description: "Master&#39;s thesis on the stochastic foundations of denoising diffusion probabilistic models, with implementation and comparative evaluation against GANs and VAEs.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/diffusion_project/";
             },},{id: "projects-ecg-denoising-with-deep-learning",
@@ -432,8 +432,8 @@ ninja.data = [{
           description: "Panel-data econometric analysis of structural determinants of life expectancy across 193 countries over 2000-2015.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/life_expectancy_project/";
-            },},{id: "projects-nlp-classification-amp-generation",
-          title: 'NLP — Classification &amp;amp; Generation',
+            },},{id: "projects-natural-language-processing",
+          title: 'Natural language processing',
           description: "Applied NLP pipeline combining supervised misinformation classification and transformer-based abstractive title generation.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/nlp_classification_generation_project/";
